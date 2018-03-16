@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SceneSwap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MTKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxX-gu-7al">
+                                <rect key="frame" x="293" y="0.0" width="82" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6m-KZ-ucB" userLabel="Add Object Button">
+                                        <rect key="frame" x="17" y="310" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="GBY-Hi-Bcp"/>
+                                            <constraint firstAttribute="width" constant="48" id="M9L-qx-iG8"/>
+                                        </constraints>
+                                        <state key="normal" image="oval">
+                                            <color key="titleColor" red="0.85882352939999995" green="0.72941176470000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29b-l8-EDm">
+                                        <rect key="frame" x="25" y="318" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="JgB-jp-Q02"/>
+                                            <constraint firstAttribute="height" constant="32" id="kwl-nO-Edu"/>
+                                        </constraints>
+                                        <state key="normal" image="filled-circle"/>
+                                        <connections>
+                                            <action selector="captureImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZh-OA-I7j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="THV-dR-Mhe"/>
+                                    <constraint firstItem="v6m-KZ-ucB" firstAttribute="centerX" secondItem="JxX-gu-7al" secondAttribute="centerX" id="VPN-Ns-hPH"/>
+                                    <constraint firstItem="29b-l8-EDm" firstAttribute="centerY" secondItem="v6m-KZ-ucB" secondAttribute="centerY" id="lEW-gX-tZ2"/>
+                                    <constraint firstItem="29b-l8-EDm" firstAttribute="centerX" secondItem="v6m-KZ-ucB" secondAttribute="centerX" id="pix-OV-JHC"/>
+                                    <constraint firstItem="v6m-KZ-ucB" firstAttribute="centerY" secondItem="JxX-gu-7al" secondAttribute="centerY" id="ynS-Yp-ZsB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JxX-gu-7al" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Esj-Fa-G6i"/>
+                            <constraint firstAttribute="bottom" secondItem="JxX-gu-7al" secondAttribute="bottom" id="Pip-eN-PS2"/>
+                            <constraint firstItem="JxX-gu-7al" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zsO-ay-UQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filled-circle" width="512" height="512"/>
+        <image name="oval" width="512" height="512"/>
+    </resources>
+</document>

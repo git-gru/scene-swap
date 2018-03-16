@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65B9A5B4205BF1E200C94FF3 /* MetalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */; };
+		65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */; };
+		65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF3F205A54BA00AE4C64 /* Main.storyboard */; };
+		65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF42205A54BA00AE4C64 /* Assets.xcassets */; };
+		65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF44205A54BA00AE4C64 /* LaunchScreen.storyboard */; };
+		65FCFF51205A54BA00AE4C64 /* SceneSwapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF50205A54BA00AE4C64 /* SceneSwapTests.swift */; };
+		65FCFF5C205A54BA00AE4C64 /* SceneSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF5B205A54BA00AE4C64 /* SceneSwapUITests.swift */; };
+		65FCFF70205A550400AE4C64 /* Game.obj in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF69205A550300AE4C64 /* Game.obj */; };
+		65FCFF71205A550400AE4C64 /* GameTex.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF6B205A550300AE4C64 /* GameTex.png */; };
+		65FCFF72205A550400AE4C64 /* Square.obj in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF6C205A550300AE4C64 /* Square.obj */; };
+		65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6D205A550300AE4C64 /* Renderer.swift */; };
+		65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6E205A550400AE4C64 /* Shaders.metal */; };
+		65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6F205A550400AE4C64 /* ViewController.swift */; };
+		65FCFF7A205A553800AE4C64 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF77205A553800AE4C64 /* Metal.framework */; };
+		65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF78205A553800AE4C64 /* MetalKit.framework */; };
+		65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */; };
+		65FCFF82205A57AC00AE4C64 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF81205A57AC00AE4C64 /* ARKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65FCFF4D205A54BA00AE4C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65FCFF30205A54BA00AE4C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65FCFF37205A54BA00AE4C64;
+			remoteInfo = SceneSwap;
+		};
+		65FCFF58205A54BA00AE4C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65FCFF30205A54BA00AE4C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65FCFF37205A54BA00AE4C64;
+			remoteInfo = SceneSwap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalExt.swift; sourceTree = "<group>"; };
+		65FCFF38205A54BA00AE4C64 /* SceneSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65FCFF40205A54BA00AE4C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65FCFF42205A54BA00AE4C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65FCFF45205A54BA00AE4C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65FCFF47205A54BA00AE4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FCFF4C205A54BA00AE4C64 /* SceneSwapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneSwapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FCFF50205A54BA00AE4C64 /* SceneSwapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSwapTests.swift; sourceTree = "<group>"; };
+		65FCFF52205A54BA00AE4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FCFF57205A54BA00AE4C64 /* SceneSwapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SceneSwapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FCFF5B205A54BA00AE4C64 /* SceneSwapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSwapUITests.swift; sourceTree = "<group>"; };
+		65FCFF5D205A54BA00AE4C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FCFF69205A550300AE4C64 /* Game.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Game.obj; sourceTree = "<group>"; };
+		65FCFF6A205A550300AE4C64 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		65FCFF6B205A550300AE4C64 /* GameTex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameTex.png; sourceTree = "<group>"; };
+		65FCFF6C205A550300AE4C64 /* Square.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Square.obj; sourceTree = "<group>"; };
+		65FCFF6D205A550300AE4C64 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		65FCFF6E205A550400AE4C64 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		65FCFF6F205A550400AE4C64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Downloads/arkit-virtual-backdrop-master 2/Backdrop Demo/ViewController.swift"; sourceTree = "<group>"; };
+		65FCFF77205A553800AE4C64 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		65FCFF78205A553800AE4C64 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		65FCFF7D205A558A00AE4C64 /* SceneSwap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneSwap-Bridging-Header.h"; sourceTree = "<group>"; };
+		65FCFF81205A57AC00AE4C64 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65FCFF35205A54BA00AE4C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FCFF82205A57AC00AE4C64 /* ARKit.framework in Frameworks */,
+				65FCFF7A205A553800AE4C64 /* Metal.framework in Frameworks */,
+				65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */,
+				65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF49205A54BA00AE4C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF54205A54BA00AE4C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65FCFF2F205A54BA00AE4C64 = {
+			isa = PBXGroup;
+			children = (
+				65FCFF3A205A54BA00AE4C64 /* SceneSwap */,
+				65FCFF4F205A54BA00AE4C64 /* SceneSwapTests */,
+				65FCFF5A205A54BA00AE4C64 /* SceneSwapUITests */,
+				65FCFF39205A54BA00AE4C64 /* Products */,
+				65FCFF76205A553800AE4C64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65FCFF39205A54BA00AE4C64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF38205A54BA00AE4C64 /* SceneSwap.app */,
+				65FCFF4C205A54BA00AE4C64 /* SceneSwapTests.xctest */,
+				65FCFF57205A54BA00AE4C64 /* SceneSwapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65FCFF3A205A54BA00AE4C64 /* SceneSwap */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF69205A550300AE4C64 /* Game.obj */,
+				65FCFF6B205A550300AE4C64 /* GameTex.png */,
+				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
+				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
+				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
+				65FCFF6C205A550300AE4C64 /* Square.obj */,
+				65FCFF6F205A550400AE4C64 /* ViewController.swift */,
+				65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */,
+				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
+				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
+				65FCFF42205A54BA00AE4C64 /* Assets.xcassets */,
+				65FCFF44205A54BA00AE4C64 /* LaunchScreen.storyboard */,
+				65FCFF47205A54BA00AE4C64 /* Info.plist */,
+				65FCFF7D205A558A00AE4C64 /* SceneSwap-Bridging-Header.h */,
+			);
+			path = SceneSwap;
+			sourceTree = "<group>";
+		};
+		65FCFF4F205A54BA00AE4C64 /* SceneSwapTests */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF50205A54BA00AE4C64 /* SceneSwapTests.swift */,
+				65FCFF52205A54BA00AE4C64 /* Info.plist */,
+			);
+			path = SceneSwapTests;
+			sourceTree = "<group>";
+		};
+		65FCFF5A205A54BA00AE4C64 /* SceneSwapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF5B205A54BA00AE4C64 /* SceneSwapUITests.swift */,
+				65FCFF5D205A54BA00AE4C64 /* Info.plist */,
+			);
+			path = SceneSwapUITests;
+			sourceTree = "<group>";
+		};
+		65FCFF76205A553800AE4C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF81205A57AC00AE4C64 /* ARKit.framework */,
+				65FCFF77205A553800AE4C64 /* Metal.framework */,
+				65FCFF78205A553800AE4C64 /* MetalKit.framework */,
+				65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65FCFF37205A54BA00AE4C64 /* SceneSwap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FCFF60205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwap" */;
+			buildPhases = (
+				65FCFF34205A54BA00AE4C64 /* Sources */,
+				65FCFF35205A54BA00AE4C64 /* Frameworks */,
+				65FCFF36205A54BA00AE4C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SceneSwap;
+			productName = SceneSwap;
+			productReference = 65FCFF38205A54BA00AE4C64 /* SceneSwap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65FCFF4B205A54BA00AE4C64 /* SceneSwapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FCFF63205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapTests" */;
+			buildPhases = (
+				65FCFF48205A54BA00AE4C64 /* Sources */,
+				65FCFF49205A54BA00AE4C64 /* Frameworks */,
+				65FCFF4A205A54BA00AE4C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65FCFF4E205A54BA00AE4C64 /* PBXTargetDependency */,
+			);
+			name = SceneSwapTests;
+			productName = SceneSwapTests;
+			productReference = 65FCFF4C205A54BA00AE4C64 /* SceneSwapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65FCFF56205A54BA00AE4C64 /* SceneSwapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FCFF66205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapUITests" */;
+			buildPhases = (
+				65FCFF53205A54BA00AE4C64 /* Sources */,
+				65FCFF54205A54BA00AE4C64 /* Frameworks */,
+				65FCFF55205A54BA00AE4C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65FCFF59205A54BA00AE4C64 /* PBXTargetDependency */,
+			);
+			name = SceneSwapUITests;
+			productName = SceneSwapUITests;
+			productReference = 65FCFF57205A54BA00AE4C64 /* SceneSwapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65FCFF30205A54BA00AE4C64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Rizwan;
+				TargetAttributes = {
+					65FCFF37205A54BA00AE4C64 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					65FCFF4B205A54BA00AE4C64 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65FCFF37205A54BA00AE4C64;
+					};
+					65FCFF56205A54BA00AE4C64 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65FCFF37205A54BA00AE4C64;
+					};
+				};
+			};
+			buildConfigurationList = 65FCFF33205A54BA00AE4C64 /* Build configuration list for PBXProject "SceneSwap" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65FCFF2F205A54BA00AE4C64;
+			productRefGroup = 65FCFF39205A54BA00AE4C64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65FCFF37205A54BA00AE4C64 /* SceneSwap */,
+				65FCFF4B205A54BA00AE4C64 /* SceneSwapTests */,
+				65FCFF56205A54BA00AE4C64 /* SceneSwapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65FCFF36205A54BA00AE4C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */,
+				65FCFF71205A550400AE4C64 /* GameTex.png in Resources */,
+				65FCFF72205A550400AE4C64 /* Square.obj in Resources */,
+				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
+				65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */,
+				65FCFF70205A550400AE4C64 /* Game.obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF4A205A54BA00AE4C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF55205A54BA00AE4C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65FCFF34205A54BA00AE4C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B9A5B4205BF1E200C94FF3 /* MetalExt.swift in Sources */,
+				65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */,
+				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
+				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,
+				65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF48205A54BA00AE4C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FCFF51205A54BA00AE4C64 /* SceneSwapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FCFF53205A54BA00AE4C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65FCFF5C205A54BA00AE4C64 /* SceneSwapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65FCFF4E205A54BA00AE4C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65FCFF37205A54BA00AE4C64 /* SceneSwap */;
+			targetProxy = 65FCFF4D205A54BA00AE4C64 /* PBXContainerItemProxy */;
+		};
+		65FCFF59205A54BA00AE4C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65FCFF37205A54BA00AE4C64 /* SceneSwap */;
+			targetProxy = 65FCFF58205A54BA00AE4C64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65FCFF3F205A54BA00AE4C64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65FCFF40205A54BA00AE4C64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65FCFF44205A54BA00AE4C64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65FCFF45205A54BA00AE4C64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65FCFF5E205A54BA00AE4C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65FCFF5F205A54BA00AE4C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65FCFF61205A54BA00AE4C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RCZYH32VP;
+				INFOPLIST_FILE = SceneSwap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthew.sceneswap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneSwap/SceneSwap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65FCFF62205A54BA00AE4C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4RCZYH32VP;
+				INFOPLIST_FILE = SceneSwap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthew.sceneswap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneSwap/SceneSwap-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65FCFF64205A54BA00AE4C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneSwapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammadian.SceneSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneSwap.app/SceneSwap";
+			};
+			name = Debug;
+		};
+		65FCFF65205A54BA00AE4C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneSwapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammadian.SceneSwapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SceneSwap.app/SceneSwap";
+			};
+			name = Release;
+		};
+		65FCFF67205A54BA00AE4C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneSwapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammadian.SceneSwapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SceneSwap;
+			};
+			name = Debug;
+		};
+		65FCFF68205A54BA00AE4C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SceneSwapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammadian.SceneSwapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SceneSwap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65FCFF33205A54BA00AE4C64 /* Build configuration list for PBXProject "SceneSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FCFF5E205A54BA00AE4C64 /* Debug */,
+				65FCFF5F205A54BA00AE4C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FCFF60205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FCFF61205A54BA00AE4C64 /* Debug */,
+				65FCFF62205A54BA00AE4C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FCFF63205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FCFF64205A54BA00AE4C64 /* Debug */,
+				65FCFF65205A54BA00AE4C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FCFF66205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65FCFF67205A54BA00AE4C64 /* Debug */,
+				65FCFF68205A54BA00AE4C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65FCFF30205A54BA00AE4C64 /* Project object */;
+}
