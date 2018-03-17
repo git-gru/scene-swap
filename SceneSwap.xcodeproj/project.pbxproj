@@ -16,7 +16,6 @@
 		65FCFF5C205A54BA00AE4C64 /* SceneSwapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF5B205A54BA00AE4C64 /* SceneSwapUITests.swift */; };
 		65FCFF70205A550400AE4C64 /* Game.obj in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF69205A550300AE4C64 /* Game.obj */; };
 		65FCFF71205A550400AE4C64 /* GameTex.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF6B205A550300AE4C64 /* GameTex.png */; };
-		65FCFF72205A550400AE4C64 /* Square.obj in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF6C205A550300AE4C64 /* Square.obj */; };
 		65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6D205A550300AE4C64 /* Renderer.swift */; };
 		65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6E205A550400AE4C64 /* Shaders.metal */; };
 		65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6F205A550400AE4C64 /* ViewController.swift */; };
@@ -60,7 +59,6 @@
 		65FCFF69205A550300AE4C64 /* Game.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Game.obj; sourceTree = "<group>"; };
 		65FCFF6A205A550300AE4C64 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		65FCFF6B205A550300AE4C64 /* GameTex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameTex.png; sourceTree = "<group>"; };
-		65FCFF6C205A550300AE4C64 /* Square.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Square.obj; sourceTree = "<group>"; };
 		65FCFF6D205A550300AE4C64 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		65FCFF6E205A550400AE4C64 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		65FCFF6F205A550400AE4C64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Downloads/arkit-virtual-backdrop-master 2/Backdrop Demo/ViewController.swift"; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
 				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
 				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
-				65FCFF6C205A550300AE4C64 /* Square.obj */,
 				65FCFF6F205A550400AE4C64 /* ViewController.swift */,
 				65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */,
 				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
@@ -281,7 +278,6 @@
 			files = (
 				65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */,
 				65FCFF71205A550400AE4C64 /* GameTex.png in Resources */,
-				65FCFF72205A550400AE4C64 /* Square.obj in Resources */,
 				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
 				65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */,
 				65FCFF70205A550400AE4C64 /* Game.obj in Resources */,
