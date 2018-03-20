@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658A402B205F836900171BAE /* Cylinderv01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 658A4029205F836900171BAE /* Cylinderv01.obj */; };
+		658A402C205F836900171BAE /* Ballroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 658A402A205F836900171BAE /* Ballroom.jpg */; };
 		65B9A5B4205BF1E200C94FF3 /* MetalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */; };
 		65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */; };
 		65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF3F205A54BA00AE4C64 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		658A4029205F836900171BAE /* Cylinderv01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinderv01.obj; sourceTree = "<group>"; };
+		658A402A205F836900171BAE /* Ballroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ballroom.jpg; sourceTree = "<group>"; };
 		65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalExt.swift; sourceTree = "<group>"; };
 		65FCFF38205A54BA00AE4C64 /* SceneSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		65FCFF3A205A54BA00AE4C64 /* SceneSwap */ = {
 			isa = PBXGroup;
 			children = (
+				658A402A205F836900171BAE /* Ballroom.jpg */,
+				658A4029205F836900171BAE /* Cylinderv01.obj */,
 				65FCFF69205A550300AE4C64 /* Game.obj */,
 				65FCFF6B205A550300AE4C64 /* GameTex.png */,
 				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
@@ -279,7 +285,9 @@
 				65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */,
 				65FCFF71205A550400AE4C64 /* GameTex.png in Resources */,
 				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
+				658A402B205F836900171BAE /* Cylinderv01.obj in Resources */,
 				65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */,
+				658A402C205F836900171BAE /* Ballroom.jpg in Resources */,
 				65FCFF70205A550400AE4C64 /* Game.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

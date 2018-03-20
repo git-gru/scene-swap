@@ -140,7 +140,9 @@ class Renderer {
             }
             
             if let renderPassDescriptor = renderDestination.currentRenderPassDescriptor, let currentDrawable = renderDestination.currentDrawable, let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor) {
-                
+                                renderPassDescriptor.depthAttachment.loadAction = MTLLoadAction.clear
+                                renderPassDescriptor.depthAttachment.storeAction = MTLStoreAction.store
+                                renderPassDescriptor.stencilAttachment.texture = renderPassDescriptor.depthAttachment.texture;
                 renderEncoder.label = "MyRenderEncoder"
                 
                 drawAnchorGeometry(renderEncoder: renderEncoder)
@@ -306,7 +308,7 @@ class Renderer {
         
         // Load texture for the model
         let loader = MTKTextureLoader(device: device)
-        guard let texUrl = Bundle.main.url(forResource: "GameTex", withExtension: "png") else {
+        guard let texUrl = Bundle.main.url(forResource: "Ballroom", withExtension: "jpg") else {
             fatalError("Failed to find model file.")
         }
 
@@ -332,7 +334,10 @@ class Renderer {
         (vertexDescriptor.attributes[Int(kVertexAttributeNormal.rawValue)] as! MDLVertexAttribute).name   = MDLVertexAttributeNormal
         
         // Load the .OBJ file
-        guard let url = Bundle.main.url(forResource: "Game", withExtension: "obj") else {
+//        guard let url = Bundle.main.url(forResource: "Game", withExtension: "obj") else {
+//            fatalError("Failed to find model file.")
+//        }
+        guard let url = Bundle.main.url(forResource: "Cylinderv01", withExtension: "obj") else {
             fatalError("Failed to find model file.")
         }
         
