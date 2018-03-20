@@ -58,6 +58,10 @@ class Renderer {
     var capturedImageTextureCbCr: CVMetalTexture?
     var capturedImageTextureDepth: CVMetalTexture?
     var anchorTexture: MTLTexture?
+    var mixFactor: Float = 1.0
+    struct MixerParameters {
+        var mixFactor: Float
+    }
     
     // Captured image texture cache
     var capturedImageTextureCache: CVMetalTextureCache!
@@ -140,11 +144,11 @@ class Renderer {
             }
             
             if let renderPassDescriptor = renderDestination.currentRenderPassDescriptor, let currentDrawable = renderDestination.currentDrawable, let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor) {
-                                renderPassDescriptor.depthAttachment.loadAction = MTLLoadAction.clear
-                                renderPassDescriptor.depthAttachment.storeAction = MTLStoreAction.store
-                                renderPassDescriptor.stencilAttachment.texture = renderPassDescriptor.depthAttachment.texture;
                 renderEncoder.label = "MyRenderEncoder"
+                var parameters = MixerParameters(mixFactor: mixFactor)
                 
+
+                renderEncoder.setFragmentBytes( UnsafeMutableRawPointer(&parameters), length: MemoryLayout<MixerParameters>.size, index: 0)
                 drawAnchorGeometry(renderEncoder: renderEncoder)
                 drawCapturedImage(renderEncoder: renderEncoder)
                 
