@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import LGSideMenuController
 
+let storyBoardMain = UIStoryboard(name: "Main", bundle: nil)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setMenu()
         return true
+    }
+    
+    func setMenu(){
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let rootViewController = storyBoardMain.instantiateViewController(withIdentifier: "ViewController")
+        let leftViewController = storyBoardMain.instantiateViewController(withIdentifier: "sidemenucontroller")
+        
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        
+        let sideMenuController = LGSideMenuController(rootViewController: navigationController,
+                                                      leftViewController: leftViewController,
+                                                      rightViewController: nil)
+
+        sideMenuController.leftViewWidth = 250.0;
+        sideMenuController.leftViewPresentationStyle = .slideBelow ;
+        self.window?.rootViewController = sideMenuController
+        self.window?.makeKeyAndVisible()
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

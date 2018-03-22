@@ -39,6 +39,9 @@ let kImagePlaneVertexData: [Float] = [
 
 
 class Renderer {
+    
+    var obj = "Game"
+    var image = "GameTex"
     let session: ARSession
     let device: MTLDevice
     let inFlightSemaphore = DispatchSemaphore(value: kMaxBuffersInFlight)
@@ -311,8 +314,14 @@ class Renderer {
         // Create and load our assets into Metal objects including meshes and textures
         
         // Load texture for the model
+        var ext = "png"
         let loader = MTKTextureLoader(device: device)
-        guard let texUrl = Bundle.main.url(forResource: "Ballroom", withExtension: "jpg") else {
+        if image == "Ballroom"{
+            ext = "jpg"
+        }else{
+            ext = "png"
+        }
+        guard let texUrl = Bundle.main.url(forResource: image, withExtension: ext) else {
             fatalError("Failed to find model file.")
         }
 
@@ -341,7 +350,7 @@ class Renderer {
 //        guard let url = Bundle.main.url(forResource: "Game", withExtension: "obj") else {
 //            fatalError("Failed to find model file.")
 //        }
-        guard let url = Bundle.main.url(forResource: "Cylinderv01", withExtension: "obj") else {
+        guard let url = Bundle.main.url(forResource: obj, withExtension: "obj") else {
             fatalError("Failed to find model file.")
         }
         
@@ -404,8 +413,8 @@ class Renderer {
         
         let uniforms = sharedUniformBufferAddress.assumingMemoryBound(to: SharedUniforms.self)
         
-        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(for: .landscapeRight)
-        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(for: .landscapeRight, viewportSize: viewportSize, zNear: 0.01, zFar: 1000)
+        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(for: .portrait)
+        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(for: .portrait, viewportSize: viewportSize, zNear: 0.01, zFar: 1000)
 
         // Set up lighting for the scene using the ambient intensity if provided
         var ambientIntensity: Float = 1.0
@@ -451,7 +460,7 @@ class Renderer {
                 
                 // Calculate the eye-depth of the anchor
                 let uniforms = sharedUniformBufferAddress.assumingMemoryBound(to: SharedUniforms.self)
-                let viewMatrix = frame.camera.viewMatrix(for: .landscapeRight)
+                let viewMatrix = frame.camera.viewMatrix(for: .portrait)
                 let upwardsCam = viewMatrix[1, 2]
                 let camHeight = viewMatrix[3, 1]
                 let headHeight = anchor.transform[3, 1]
@@ -506,7 +515,7 @@ class Renderer {
     
     func updateImagePlane(frame: ARFrame) {
         // Update the texture coordinates of our image plane to aspect fill the viewport
-        let displayToCameraTransform = frame.displayTransform(for: .landscapeRight, viewportSize: viewportSize).inverted()
+        let displayToCameraTransform = frame.displayTransform(for: .portrait, viewportSize: viewportSize).inverted()
 
         let vertexData = imagePlaneVertexBuffer.contents().assumingMemoryBound(to: Float.self)
         for index in 0...3 {

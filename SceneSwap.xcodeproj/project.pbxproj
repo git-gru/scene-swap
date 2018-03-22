@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40140E47BB6C63B7CCD63BA4 /* Pods_SceneSwapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB6F4E1DC05E51479735A53 /* Pods_SceneSwapTests.framework */; };
+		6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587DA4E2063F634002FA027 /* SideMenuController.swift */; };
+		6587DA532063FB15002FA027 /* Ballroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6587DA522063FB15002FA027 /* Ballroom.jpg */; };
 		658A402B205F836900171BAE /* Cylinderv01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 658A4029205F836900171BAE /* Cylinderv01.obj */; };
-		658A402C205F836900171BAE /* Ballroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 658A402A205F836900171BAE /* Ballroom.jpg */; };
-		65B9A5B4205BF1E200C94FF3 /* MetalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */; };
 		65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */; };
 		65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF3F205A54BA00AE4C64 /* Main.storyboard */; };
 		65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF42205A54BA00AE4C64 /* Assets.xcassets */; };
@@ -25,6 +26,8 @@
 		65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF78205A553800AE4C64 /* MetalKit.framework */; };
 		65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */; };
 		65FCFF82205A57AC00AE4C64 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF81205A57AC00AE4C64 /* ARKit.framework */; };
+		C58AB5B5DAF4C4B1248F84F7 /* Pods_SceneSwapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4132C1CA109DCCA2A079CF51 /* Pods_SceneSwapUITests.framework */; };
+		CACD424CFCBFF1CC0D0736B7 /* Pods_SceneSwap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F356D00F3C214B372DDE5F0 /* Pods_SceneSwap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DAABA65AC84EFEAEB53AD7D /* Pods-SceneSwap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwap.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap.release.xcconfig"; sourceTree = "<group>"; };
+		1154892969A6D38C249193E9 /* Pods-SceneSwapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BB6F4E1DC05E51479735A53 /* Pods_SceneSwapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneSwapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F356D00F3C214B372DDE5F0 /* Pods_SceneSwap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneSwap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4132C1CA109DCCA2A079CF51 /* Pods_SceneSwapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneSwapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1DF23E384A9B7B38696EE1 /* Pods-SceneSwapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61E4A299DD5BE13A9C1C0B12 /* Pods-SceneSwapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests.release.xcconfig"; sourceTree = "<group>"; };
+		6587DA4E2063F634002FA027 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
+		6587DA522063FB15002FA027 /* Ballroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ballroom.jpg; sourceTree = "<group>"; };
 		658A4029205F836900171BAE /* Cylinderv01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinderv01.obj; sourceTree = "<group>"; };
-		658A402A205F836900171BAE /* Ballroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ballroom.jpg; sourceTree = "<group>"; };
-		65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalExt.swift; sourceTree = "<group>"; };
 		65FCFF38205A54BA00AE4C64 /* SceneSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65FCFF40205A54BA00AE4C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +81,8 @@
 		65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
 		65FCFF7D205A558A00AE4C64 /* SceneSwap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneSwap-Bridging-Header.h"; sourceTree = "<group>"; };
 		65FCFF81205A57AC00AE4C64 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		97DF9F699313B51AB515377C /* Pods-SceneSwapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6993892645D21E93BEB453C /* Pods-SceneSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 				65FCFF7A205A553800AE4C64 /* Metal.framework in Frameworks */,
 				65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */,
 				65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */,
+				CACD424CFCBFF1CC0D0736B7 /* Pods_SceneSwap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40140E47BB6C63B7CCD63BA4 /* Pods_SceneSwapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58AB5B5DAF4C4B1248F84F7 /* Pods_SceneSwapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +125,7 @@
 				65FCFF5A205A54BA00AE4C64 /* SceneSwapUITests */,
 				65FCFF39205A54BA00AE4C64 /* Products */,
 				65FCFF76205A553800AE4C64 /* Frameworks */,
+				F67930DB4CCD7F97F6A9F188 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,7 +142,7 @@
 		65FCFF3A205A54BA00AE4C64 /* SceneSwap */ = {
 			isa = PBXGroup;
 			children = (
-				658A402A205F836900171BAE /* Ballroom.jpg */,
+				6587DA522063FB15002FA027 /* Ballroom.jpg */,
 				658A4029205F836900171BAE /* Cylinderv01.obj */,
 				65FCFF69205A550300AE4C64 /* Game.obj */,
 				65FCFF6B205A550300AE4C64 /* GameTex.png */,
@@ -134,7 +150,7 @@
 				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
 				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
 				65FCFF6F205A550400AE4C64 /* ViewController.swift */,
-				65B9A5B3205BF1E200C94FF3 /* MetalExt.swift */,
+				6587DA4E2063F634002FA027 /* SideMenuController.swift */,
 				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
 				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
 				65FCFF42205A54BA00AE4C64 /* Assets.xcassets */,
@@ -170,8 +186,24 @@
 				65FCFF77205A553800AE4C64 /* Metal.framework */,
 				65FCFF78205A553800AE4C64 /* MetalKit.framework */,
 				65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */,
+				2F356D00F3C214B372DDE5F0 /* Pods_SceneSwap.framework */,
+				2BB6F4E1DC05E51479735A53 /* Pods_SceneSwapTests.framework */,
+				4132C1CA109DCCA2A079CF51 /* Pods_SceneSwapUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F67930DB4CCD7F97F6A9F188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6993892645D21E93BEB453C /* Pods-SceneSwap.debug.xcconfig */,
+				0DAABA65AC84EFEAEB53AD7D /* Pods-SceneSwap.release.xcconfig */,
+				97DF9F699313B51AB515377C /* Pods-SceneSwapTests.debug.xcconfig */,
+				61E4A299DD5BE13A9C1C0B12 /* Pods-SceneSwapTests.release.xcconfig */,
+				1154892969A6D38C249193E9 /* Pods-SceneSwapUITests.debug.xcconfig */,
+				4B1DF23E384A9B7B38696EE1 /* Pods-SceneSwapUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65FCFF60205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwap" */;
 			buildPhases = (
+				C200F51D20437F4670CD4925 /* [CP] Check Pods Manifest.lock */,
 				65FCFF34205A54BA00AE4C64 /* Sources */,
 				65FCFF35205A54BA00AE4C64 /* Frameworks */,
 				65FCFF36205A54BA00AE4C64 /* Resources */,
+				273D3E0A280C44D5F4FCB542 /* [CP] Embed Pods Frameworks */,
+				C7EA4FDEFF51A19737178A1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65FCFF63205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapTests" */;
 			buildPhases = (
+				6E87EBB8E66293FD52B0040B /* [CP] Check Pods Manifest.lock */,
 				65FCFF48205A54BA00AE4C64 /* Sources */,
 				65FCFF49205A54BA00AE4C64 /* Frameworks */,
 				65FCFF4A205A54BA00AE4C64 /* Resources */,
+				D88B8C86AAE27D03FC6F5A5F /* [CP] Embed Pods Frameworks */,
+				E935546FC726FE8919E8FC47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65FCFF66205A54BA00AE4C64 /* Build configuration list for PBXNativeTarget "SceneSwapUITests" */;
 			buildPhases = (
+				C3775363CED167117756BC94 /* [CP] Check Pods Manifest.lock */,
 				65FCFF53205A54BA00AE4C64 /* Sources */,
 				65FCFF54205A54BA00AE4C64 /* Frameworks */,
 				65FCFF55205A54BA00AE4C64 /* Resources */,
+				4A673E6ED8EDD67BC8BCA307 /* [CP] Embed Pods Frameworks */,
+				51697983DED2C57AC06AFBE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,7 +328,7 @@
 				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
 				658A402B205F836900171BAE /* Cylinderv01.obj in Resources */,
 				65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */,
-				658A402C205F836900171BAE /* Ballroom.jpg in Resources */,
+				6587DA532063FB15002FA027 /* Ballroom.jpg in Resources */,
 				65FCFF70205A550400AE4C64 /* Game.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,12 +349,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		273D3E0A280C44D5F4FCB542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A673E6ED8EDD67BC8BCA307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51697983DED2C57AC06AFBE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E87EBB8E66293FD52B0040B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneSwapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C200F51D20437F4670CD4925 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneSwap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3775363CED167117756BC94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SceneSwapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7EA4FDEFF51A19737178A1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D88B8C86AAE27D03FC6F5A5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E935546FC726FE8919E8FC47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65FCFF34205A54BA00AE4C64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65B9A5B4205BF1E200C94FF3 /* MetalExt.swift in Sources */,
+				6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */,
 				65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */,
 				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
 				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,
@@ -481,6 +672,7 @@
 		};
 		65FCFF61205A54BA00AE4C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6993892645D21E93BEB453C /* Pods-SceneSwap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -499,6 +691,7 @@
 		};
 		65FCFF62205A54BA00AE4C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAABA65AC84EFEAEB53AD7D /* Pods-SceneSwap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -516,6 +709,7 @@
 		};
 		65FCFF64205A54BA00AE4C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97DF9F699313B51AB515377C /* Pods-SceneSwapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +726,7 @@
 		};
 		65FCFF65205A54BA00AE4C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E4A299DD5BE13A9C1C0B12 /* Pods-SceneSwapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +743,7 @@
 		};
 		65FCFF67205A54BA00AE4C64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1154892969A6D38C249193E9 /* Pods-SceneSwapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +759,7 @@
 		};
 		65FCFF68205A54BA00AE4C64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B1DF23E384A9B7B38696EE1 /* Pods-SceneSwapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
