@@ -21,7 +21,6 @@
 		65FCFF71205A550400AE4C64 /* GameTex.png in Resources */ = {isa = PBXBuildFile; fileRef = 65FCFF6B205A550300AE4C64 /* GameTex.png */; };
 		65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6D205A550300AE4C64 /* Renderer.swift */; };
 		65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6E205A550400AE4C64 /* Shaders.metal */; };
-		65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCFF6F205A550400AE4C64 /* ViewController.swift */; };
 		65FCFF7A205A553800AE4C64 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF77205A553800AE4C64 /* Metal.framework */; };
 		65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF78205A553800AE4C64 /* MetalKit.framework */; };
 		65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */; };
@@ -75,7 +74,6 @@
 		65FCFF6B205A550300AE4C64 /* GameTex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameTex.png; sourceTree = "<group>"; };
 		65FCFF6D205A550300AE4C64 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		65FCFF6E205A550400AE4C64 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		65FCFF6F205A550400AE4C64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../../Downloads/arkit-virtual-backdrop-master 2/Backdrop Demo/ViewController.swift"; sourceTree = "<group>"; };
 		65FCFF77205A553800AE4C64 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		65FCFF78205A553800AE4C64 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
@@ -149,7 +147,6 @@
 				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
 				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
 				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
-				65FCFF6F205A550400AE4C64 /* ViewController.swift */,
 				6587DA4E2063F634002FA027 /* SideMenuController.swift */,
 				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
 				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
@@ -505,7 +502,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */,
-				65FCFF75205A550400AE4C64 /* ViewController.swift in Sources */,
 				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
 				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,
 				65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */,
