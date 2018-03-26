@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		40140E47BB6C63B7CCD63BA4 /* Pods_SceneSwapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB6F4E1DC05E51479735A53 /* Pods_SceneSwapTests.framework */; };
+		6520B0EE2068BF3800CBCB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520B0ED2068BF3800CBCB12 /* ViewController.swift */; };
 		6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587DA4E2063F634002FA027 /* SideMenuController.swift */; };
 		6587DA532063FB15002FA027 /* Ballroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6587DA522063FB15002FA027 /* Ballroom.jpg */; };
 		658A402B205F836900171BAE /* Cylinderv01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 658A4029205F836900171BAE /* Cylinderv01.obj */; };
@@ -54,6 +55,7 @@
 		4132C1CA109DCCA2A079CF51 /* Pods_SceneSwapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SceneSwapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1DF23E384A9B7B38696EE1 /* Pods-SceneSwapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61E4A299DD5BE13A9C1C0B12 /* Pods-SceneSwapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests.release.xcconfig"; sourceTree = "<group>"; };
+		6520B0ED2068BF3800CBCB12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6587DA4E2063F634002FA027 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		6587DA522063FB15002FA027 /* Ballroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ballroom.jpg; sourceTree = "<group>"; };
 		658A4029205F836900171BAE /* Cylinderv01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinderv01.obj; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
 				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
 				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
+				6520B0ED2068BF3800CBCB12 /* ViewController.swift */,
 				6587DA4E2063F634002FA027 /* SideMenuController.swift */,
 				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
 				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
@@ -501,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6520B0EE2068BF3800CBCB12 /* ViewController.swift in Sources */,
 				6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */,
 				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
 				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,
