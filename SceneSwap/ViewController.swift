@@ -18,8 +18,8 @@ extension MTKView : RenderDestinationProvider {
 class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     
-    var obj = "Game"
-    var image = "GameTex"
+    var obj = "Cylinderv01"
+    var image = "Ballroom"
     var session: ARSession!
     var renderer: Renderer!
      @IBOutlet weak private var mixFactorSlider: UISlider!
@@ -51,20 +51,22 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
             }
             
             // Configure the renderer to draw to the view
-            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view)
-            renderer.image = self.image
-            renderer.obj = self.obj
+            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
             renderer.drawRectResized(size: view.bounds.size)
         }
     }
     
     func change(){
-        renderer.image = self.image
-        renderer.obj = self.obj
-        renderer = nil
-        startInitials()
-        let configuration = ARFaceTrackingConfiguration()
-        session.run(configuration)
+//        if let view = self.view as? MTKView {
+//            view.device = MTLCreateSystemDefaultDevice()
+//            view.backgroundColor = UIColor.clear
+//            view.delegate = nil
+//
+//            renderer = nil
+//        }
+//        startInitials()
+        
+        renderer.loadAssets(image: image, object: obj)
     }
     
     
@@ -78,8 +80,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         
         // Create a session configuration
         let configuration = ARFaceTrackingConfiguration()
-//        let configuration = ARWorldTrackingConfiguration()
-        // Run the view's session
         session.run(configuration)
         
     }

@@ -40,8 +40,8 @@ let kImagePlaneVertexData: [Float] = [
 
 class Renderer {
     
-    var obj = "Game"
-    var image = "GameTex"
+//    var obj : String!
+//    var image : String!
     let session: ARSession
     let device: MTLDevice
     let inFlightSemaphore = DispatchSemaphore(value: kMaxBuffersInFlight)
@@ -102,12 +102,12 @@ class Renderer {
     var viewportSizeDidChange: Bool = false
     
     
-    init(session: ARSession, metalDevice device: MTLDevice, renderDestination: RenderDestinationProvider) {
+    init(session: ARSession, metalDevice device: MTLDevice, renderDestination: RenderDestinationProvider,image:String, object:String) {
         self.session = session
         self.device = device
         self.renderDestination = renderDestination
         loadMetal()
-        loadAssets()
+        loadAssets(image: image, object: object)
     }
     
     func drawRectResized(size: CGSize) {
@@ -310,7 +310,7 @@ class Renderer {
         commandQueue = device.makeCommandQueue()
     }
     
-    func loadAssets() {
+    func loadAssets(image:String, object:String) {
         // Create and load our assets into Metal objects including meshes and textures
         
         // Load texture for the model
@@ -350,7 +350,7 @@ class Renderer {
 //        guard let url = Bundle.main.url(forResource: "Game", withExtension: "obj") else {
 //            fatalError("Failed to find model file.")
 //        }
-        guard let url = Bundle.main.url(forResource: obj, withExtension: "obj") else {
+        guard let url = Bundle.main.url(forResource: object, withExtension: "obj") else {
             fatalError("Failed to find model file.")
         }
         
