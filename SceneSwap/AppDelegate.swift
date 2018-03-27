@@ -30,9 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootViewController = storyBoardMain.instantiateViewController(withIdentifier: "ViewController")
         let leftViewController = storyBoardMain.instantiateViewController(withIdentifier: "sidemenucontroller")
         
-        let navigationController = UINavigationController(rootViewController: rootViewController)
+//        let navigationController = UINavigationController(rootViewController: rootViewController)
         
-        let sideMenuController = LGSideMenuController(rootViewController: navigationController,
+        let sideMenuController = LGSideMenuController(rootViewController: rootViewController,
                                                       leftViewController: leftViewController,
                                                       rightViewController: nil)
 

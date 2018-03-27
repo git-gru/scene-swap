@@ -48,8 +48,9 @@ class SideMenuController: UITableViewController {
     }
     */
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let root = self.sideMenuController?.rootViewController as! UINavigationController
-        let con = root.viewControllers[0] as! ViewController
+//        let root = self.sideMenuController?.rootViewController as! UINavigationController
+//        let con = root.viewControllers[0] as! ViewController
+        let con = self.sideMenuController?.rootViewController as! ViewController
         if indexPath.row == 0{
             con.image = "GameTex"
             con.obj = "Game"

@@ -27,7 +27,7 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         super.viewDidLoad()
         
         let but = UIBarButtonItem(image: #imageLiteral(resourceName: "menu-button"), style: .plain , target: self, action: #selector(self.openLeft))
-        self.navigationItem.leftBarButtonItem = but
+//        self.navigationItem.leftBarButtonItem = but
        startInitials()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap(gestureRecognize:)))
@@ -70,6 +70,9 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     }
     
     
+    @IBAction func openLefts(_ sender: Any) {
+        self.openLeft()
+    }
     
     @objc func openLeft(){
      self.sideMenuController?.showLeftView()
