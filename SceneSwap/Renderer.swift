@@ -66,6 +66,62 @@ class Renderer {
         var mixFactor: Float
     }
     
+
+    
+    
+    
+    // MARK: Image Filters
+    // Lazily initialized variables for each of the supported filters
+    lazy var passThrough: PassThrough = {
+        return PassThrough(device: self.device)
+    }()
+    
+    lazy var gaussianBlur: GaussianBlur = {
+        return GaussianBlur(device: self.device)
+    }()
+    
+    lazy var median: Median = {
+        return Median(device: self.device)
+    }()
+    
+    lazy var laplacian: Laplacian = {
+        return Laplacian(device: self.device)
+    }()
+    
+    lazy var sobel: Sobel = {
+        return Sobel(device: self.device)
+    }()
+    
+    lazy var thresholdBinary: ThresholdBinary = {
+        return ThresholdBinary(device: self.device)
+    }()
+    
+    lazy var convolutionEmboss: ConvolutionEmboss = {
+        return ConvolutionEmboss(device: self.device)
+    }()
+    
+    lazy var convolutionSharpen: ConvolutionSharpen = {
+        return ConvolutionSharpen(device: self.device)
+    }()
+    
+    lazy var dilateBokeh: DilateBokeh = {
+        return DilateBokeh(device: self.device)
+    }()
+    
+    lazy var morphologyClosing: MorphologyClosing = {
+        return MorphologyClosing(device: self.device)
+    }()
+    
+    lazy var histogramEqualization: HistogramEqualization = {
+        return HistogramEqualization(device: self.device)
+    }()
+    
+    lazy var histogramSpecification: HistogramSpecification = {
+        return HistogramSpecification(device: self.device)
+    }()
+    
+    
+    
     // Captured image texture cache
     var capturedImageTextureCache: CVMetalTextureCache!
     
@@ -157,6 +213,34 @@ class Renderer {
                 
                 // We're done encoding commands
                 renderEncoder.endEncoding()
+                
+                let supportedImageFilter = SupportedImageFilter.Median
+                let imageFilter: CommandBufferEncodable
+                switch supportedImageFilter {
+                case .PassThrough:              imageFilter = passThrough
+                case .GaussianBlur:             imageFilter = gaussianBlur
+                case .Median:                   imageFilter = median
+                case .Laplacian:                imageFilter = laplacian
+                case .Sobel:                    imageFilter = sobel
+                case .ThresholdBinary:          imageFilter = thresholdBinary
+                case .ConvolutionEmboss:        imageFilter = convolutionEmboss
+                case .ConvolutionSharpen:       imageFilter = convolutionSharpen
+                case .DilateBokeh:              imageFilter = dilateBokeh
+                case .MorphologyClosing:        imageFilter = morphologyClosing
+                case .HistogramEqualization:    imageFilter = histogramEqualization
+                case .HistogramSpecification:   imageFilter = histogramSpecification
+                }
+                
+                /** Obtain the current drawable.
+                 The final destination texture is always the filtered output image written to the MTKView's drawable.
+                 */
+                let destinationTexture = currentDrawable.texture
+                
+                // Encode the image filter operation.
+                imageFilter.encode(to: commandBuffer,
+                                   sourceTexture: anchorTexture!,
+                                   destinationTexture: destinationTexture)
+                
                 
                 // Schedule a present once the framebuffer is complete using the current drawable
                 commandBuffer.present(currentDrawable)

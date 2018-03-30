@@ -28,7 +28,7 @@ class PassThrough: CommandBufferEncodable {
            Instead, a blit operation is performed to copy the contents from sourceTexture to destinationTexture.
          */
         let blitCommandEncoder = commandBuffer.makeBlitCommandEncoder()
-        blitCommandEncoder.copy(from: sourceTexture,
+        blitCommandEncoder?.copy(from: sourceTexture,
                                 sourceSlice: 0,
                                 sourceLevel: 0,
                                 sourceOrigin: MTLOriginMake(0, 0, 0),
@@ -37,7 +37,7 @@ class PassThrough: CommandBufferEncodable {
                                 destinationSlice: 0,
                                 destinationLevel: 0,
                                 destinationOrigin: MTLOriginMake(0, 0, 0))
-        blitCommandEncoder.endEncoding()
+        blitCommandEncoder?.endEncoding()
     }
 }
 
@@ -272,11 +272,11 @@ class MorphologyClosing: CommandBufferEncodable {
         // Applies the dilation to the source texture and outputs the intermediate results to the intermediate texture.
         max.encode(commandBuffer: commandBuffer,
                    sourceTexture: sourceTexture,
-                   destinationTexture: intermediateTexture)
+                   destinationTexture: intermediateTexture!)
         
         // Applies the erosion to the intermediate texture and outputs the final results to the destination texture.
         min.encode(commandBuffer: commandBuffer,
-                   sourceTexture: intermediateTexture,
+                   sourceTexture: intermediateTexture!,
                    destinationTexture: destinationTexture)
     }
 }
@@ -328,13 +328,13 @@ class HistogramEqualization: CommandBufferEncodable {
         // 1: The image's histogram is calculated and passed to an MPSImageHistogramInfo object.
         calculation.encode(to: commandBuffer,
                            sourceTexture: sourceTexture,
-                           histogram: histogramInfoBuffer,
+                           histogram: histogramInfoBuffer!,
                            histogramOffset: 0)
         
         // 2: The equalization filter's encodeTransform method creates an image transform which is used to equalize the distribution of the histogram of the source image.
         equalization.encodeTransform(to: commandBuffer,
                                      sourceTexture: sourceTexture,
-                                     histogram: histogramInfoBuffer,
+                                     histogram: histogramInfoBuffer!,
                                      histogramOffset: 0)
         
         // 3: The equalization filter's encode method applies the equalization transform to the source texture and and writes the output to the destination texture.
@@ -368,11 +368,12 @@ class HistogramSpecification: CommandBufferEncodable  {
         let textureLoader = MTKTextureLoader(device: self.device)
         // The still image is loaded directly into GPU-accessible memory that is only ever read from.
         let options = [
-            MTKTextureLoaderOptionTextureStorageMode:   MTLStorageMode.private.rawValue,
-            MTKTextureLoaderOptionTextureUsage:         MTLTextureUsage.shaderRead.rawValue,
-            MTKTextureLoaderOptionSRGB:                 0
+            MTKTextureLoader.Option.textureStorageMode:   MTLStorageMode.private.rawValue,
+            MTKTextureLoader.Option.textureUsage:         MTLTextureUsage.shaderRead.rawValue,
+            MTKTextureLoader.Option.SRGB:                 0
         ]
-        return try! textureLoader.newTexture(with: image!, options: options as [String : NSObject]?)
+//        return try! textureLoader.newTexture(with: image!, options: options)
+        return try! textureLoader.newTexture(cgImage: image!, options: options)
     }()
     
     required init(device: MTLDevice) {
@@ -405,21 +406,21 @@ class HistogramSpecification: CommandBufferEncodable  {
         // 1: The histogram of the image to transform is calculated and passed to an MPSImageHistogramInfo object.
         calculation.encode(to: commandBuffer,
                            sourceTexture: sourceTexture,
-                           histogram: sourceHistogramInfoBuffer,
+                           histogram: sourceHistogramInfoBuffer!,
                            histogramOffset: 0)
         
         // 2: The histogram of the image to specify from is calculated and passed to an MPSImageHistogramInfo object.
         calculation.encode(to: commandBuffer,
                            sourceTexture: imageTexture,
-                           histogram: desiredHistogramInfoBuffer,
+                           histogram: desiredHistogramInfoBuffer!,
                            histogramOffset: 0)
   
         // 3: The specification filter's encodeTransform method creates an image transform which is used to specify the histogram.
         specification.encodeTransform(to: commandBuffer,
                                       sourceTexture: sourceTexture,
-                                      sourceHistogram: sourceHistogramInfoBuffer,
+                                      sourceHistogram: sourceHistogramInfoBuffer!,
                                       sourceHistogramOffset: 0,
-                                      desiredHistogram: desiredHistogramInfoBuffer,
+                                      desiredHistogram: desiredHistogramInfoBuffer!,
                                       desiredHistogramOffset: 0)
         
         // 4: The specification filter's encode method applies the specification transform to the source texture and and writes it to the destination texture
