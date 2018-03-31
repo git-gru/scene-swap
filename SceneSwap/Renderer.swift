@@ -65,10 +65,14 @@ class Renderer {
     struct MixerParameters {
         var mixFactor: Float
     }
+    var sourceTexture: MTLTexture?
     
 
     
-    
+    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
+        let provider = VideoImageTextureProvider(device: self.device, delegate: self)
+        return provider
+    }()
     
     // MARK: Image Filters
     // Lazily initialized variables for each of the supported filters
@@ -164,9 +168,11 @@ class Renderer {
         self.renderDestination = renderDestination
         loadMetal()
         loadAssets(image: image, object: object)
+        
     }
     
     func drawRectResized(size: CGSize) {
+        videoImageTextureProvider?.startRunning()
         viewportSize = size
         viewportSizeDidChange = true
     }
@@ -238,7 +244,7 @@ class Renderer {
                 
                 // Encode the image filter operation.
                 imageFilter.encode(to: commandBuffer,
-                                   sourceTexture: anchorTexture!,
+                                   sourceTexture: session.currentFrame?.camera as! MTLTexture,
                                    destinationTexture: destinationTexture)
                 
                 
@@ -699,5 +705,14 @@ class Renderer {
         
         return pixelBuffer
         
+    }
+}
+
+// MARK: AVCaptureVideoDataOutputSampleBufferDelegate
+extension Renderer: VideoImageTextureProviderDelegate
+{
+    func videoImageTextureProvider(_: VideoImageTextureProvider, didProvideTexture texture: MTLTexture) {
+        // Replace the source tetxure and call the MTKView's draw() method whenever the camera provides a new video frame.
+        sourceTexture = texture
     }
 }

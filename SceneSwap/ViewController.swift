@@ -23,6 +23,12 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     var session: ARSession!
     var renderer: Renderer!
      @IBOutlet weak private var mixFactorSlider: UISlider!
+    
+    
+    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
+        let provider = VideoImageTextureProvider(device: MTLCreateSystemDefaultDevice()!, delegate: renderer)
+        return provider
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,7 +90,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         // Create a session configuration
         let configuration = ARFaceTrackingConfiguration()
         session.run(configuration)
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
