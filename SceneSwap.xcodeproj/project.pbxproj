@@ -28,6 +28,9 @@
 		65FCFF7B205A553800AE4C64 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF78205A553800AE4C64 /* MetalKit.framework */; };
 		65FCFF7C205A553800AE4C64 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF79205A553800AE4C64 /* MetalPerformanceShaders.framework */; };
 		65FCFF82205A57AC00AE4C64 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FCFF81205A57AC00AE4C64 /* ARKit.framework */; };
+		C533B2D32070B20900E5B1CD /* SelfieSwapOrb.obj in Resources */ = {isa = PBXBuildFile; fileRef = C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */; };
+		C533B2D42070B20900E5B1CD /* OrbTestImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */; };
+		C533B2D62070B29A00E5B1CD /* Test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C533B2D52070B29A00E5B1CD /* Test1.jpg */; };
 		C58AB5B5DAF4C4B1248F84F7 /* Pods_SceneSwapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4132C1CA109DCCA2A079CF51 /* Pods_SceneSwapUITests.framework */; };
 		CACD424CFCBFF1CC0D0736B7 /* Pods_SceneSwap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F356D00F3C214B372DDE5F0 /* Pods_SceneSwap.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +90,9 @@
 		65FCFF81205A57AC00AE4C64 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		97DF9F699313B51AB515377C /* Pods-SceneSwapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6993892645D21E93BEB453C /* Pods-SceneSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap.debug.xcconfig"; sourceTree = "<group>"; };
+		C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SelfieSwapOrb.obj; sourceTree = "<group>"; };
+		C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OrbTestImage.jpeg; sourceTree = "<group>"; };
+		C533B2D52070B29A00E5B1CD /* Test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				6584EF65206E3B2600612B29 /* ImageFilters.swift */,
+				C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */,
+				C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */,
+				C533B2D52070B29A00E5B1CD /* Test1.jpg */,
 				6587DA522063FB15002FA027 /* Ballroom.jpg */,
 				658A4029205F836900171BAE /* Cylinderv01.obj */,
 				65FCFF69205A550300AE4C64 /* Game.obj */,
@@ -329,9 +338,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C533B2D32070B20900E5B1CD /* SelfieSwapOrb.obj in Resources */,
+				C533B2D42070B20900E5B1CD /* OrbTestImage.jpeg in Resources */,
 				65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */,
 				65FCFF71205A550400AE4C64 /* GameTex.png in Resources */,
 				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
+				C533B2D62070B29A00E5B1CD /* Test1.jpg in Resources */,
 				658A402B205F836900171BAE /* Cylinderv01.obj in Resources */,
 				65FCFF41205A54BA00AE4C64 /* Main.storyboard in Resources */,
 				6587DA532063FB15002FA027 /* Ballroom.jpg in Resources */,

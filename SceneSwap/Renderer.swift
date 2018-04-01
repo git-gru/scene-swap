@@ -408,8 +408,11 @@ class Renderer {
         let loader = MTKTextureLoader(device: device)
         if image == "Ballroom"{
             ext = "jpg"
-        }else{
+        }else if image == "GameTex"{
             ext = "png"
+        }
+        else if image == "OrbTestImage"{
+            ext = "jpeg"
         }
         guard let texUrl = Bundle.main.url(forResource: image, withExtension: ext) else {
             fatalError("Failed to find model file.")

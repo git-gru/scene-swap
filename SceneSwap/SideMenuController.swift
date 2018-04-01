@@ -34,7 +34,8 @@ class SideMenuController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
+        
         
     }
 
@@ -66,6 +67,15 @@ class SideMenuController: UITableViewController {
             con.change()
             self.sideMenuController?.hideLeftView()
         }
+        if indexPath.row == 2{
+            
+            con.image = "OrbTestImage"
+            con.obj = "SelfieSwapOrb"
+            //            con.startInitials()
+            con.change()
+            self.sideMenuController?.hideLeftView()
+        }
+        
     }
     /*
     // Override to support conditional editing of the table view.
