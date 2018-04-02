@@ -69,10 +69,10 @@ class Renderer {
     
 
     
-    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
-        let provider = VideoImageTextureProvider(device: self.device, delegate: self)
-        return provider
-    }()
+//    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
+//        let provider = VideoImageTextureProvider(device: self.device, delegate: self)
+//        return provider
+//    }()
     
     // MARK: Image Filters
     // Lazily initialized variables for each of the supported filters
@@ -162,7 +162,7 @@ class Renderer {
     var viewportSizeDidChange: Bool = false
     
     
-    init(session: ARSession, metalDevice device: MTLDevice, renderDestination: RenderDestinationProvider,image:String, object:String) {
+    init(session: ARSession, metalDevice device: MTLDevice, renderDestination: RenderDestinationProvider,image:UIImage, object:String) {
         self.session = session
         self.device = device
         self.renderDestination = renderDestination
@@ -172,7 +172,7 @@ class Renderer {
     }
     
     func drawRectResized(size: CGSize) {
-        videoImageTextureProvider?.startRunning()
+//        videoImageTextureProvider?.startRunning()
         viewportSize = size
         viewportSizeDidChange = true
     }
@@ -210,15 +210,14 @@ class Renderer {
             
             if let renderPassDescriptor = renderDestination.currentRenderPassDescriptor, let currentDrawable = renderDestination.currentDrawable, let renderEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor) {
                 renderEncoder.label = "MyRenderEncoder"
-                var parameters = MixerParameters(mixFactor: mixFactor)
+//                var parameters = MixerParameters(mixFactor: mixFactor)
                 
 
-                renderEncoder.setFragmentBytes( UnsafeMutableRawPointer(&parameters), length: MemoryLayout<MixerParameters>.size, index: 0)
+//                renderEncoder.setFragmentBytes( UnsafeMutableRawPointer(&parameters), length: MemoryLayout<MixerParameters>.size, index: 0)
                 drawAnchorGeometry(renderEncoder: renderEncoder)
                 drawCapturedImage(renderEncoder: renderEncoder)
                 
-                // We're done encoding commands
-                renderEncoder.endEncoding()
+                
                 
                 let supportedImageFilter = SupportedImageFilter.Median
                 let imageFilter: CommandBufferEncodable
@@ -243,10 +242,11 @@ class Renderer {
                 let destinationTexture = currentDrawable.texture
                 
                 // Encode the image filter operation.
-                imageFilter.encode(to: commandBuffer,
-                                   sourceTexture: session.currentFrame?.camera as! MTLTexture,
-                                   destinationTexture: destinationTexture)
-                
+//                imageFilter.encode(to: commandBuffer,
+//                                   sourceTexture: currentDrawable.texture,
+//                                   destinationTexture: destinationTexture)
+                // We're done encoding commands
+                renderEncoder.endEncoding()
                 
                 // Schedule a present once the framebuffer is complete using the current drawable
                 commandBuffer.present(currentDrawable)
@@ -400,31 +400,37 @@ class Renderer {
         commandQueue = device.makeCommandQueue()
     }
     
-    func loadAssets(image:String, object:String) {
+    func loadAssets(image:UIImage?, object:String) {
         // Create and load our assets into Metal objects including meshes and textures
         
         // Load texture for the model
-        var ext = "png"
+//        var ext = "png"
         let loader = MTKTextureLoader(device: device)
-        if image == "Ballroom"{
-            ext = "jpg"
-        }else if image == "GameTex"{
-            ext = "png"
+//        if image == "Ballroom"{
+//            ext = "jpg"
+//        }else if image == "GameTex"{
+//            ext = "png"
+//        }
+//        else if image == "OrbTestImage"{
+//            ext = "jpeg"
+//        }
+//        guard let texUrl = Bundle.main.url(forResource: image, withExtension: ext) else {
+//            fatalError("Failed to find model file.")
+//        }
+        if image != nil{
+            let im = image?.cgImage
+                    do {
+                        var modelTex : MTLTexture
+            //            try modelTex = loader.newTexture(URL: texUrl, options: [.origin: MTKTextureLoader.Origin.flippedVertically, .SRGB: false])
+                        try modelTex = loader.newTexture(cgImage: im!, options:  [.origin: MTKTextureLoader.Origin.flippedVertically, .SRGB: false])
+                        anchorTexture = modelTex
+                    } catch let error {
+                        print(error)
+                    }
+        }else{
+            anchorTexture = nil
         }
-        else if image == "OrbTestImage"{
-            ext = "jpeg"
-        }
-        guard let texUrl = Bundle.main.url(forResource: image, withExtension: ext) else {
-            fatalError("Failed to find model file.")
-        }
-
-        do {
-            var modelTex : MTLTexture
-            try modelTex = loader.newTexture(URL: texUrl, options: [.origin: MTKTextureLoader.Origin.flippedVertically, .SRGB: false])
-            anchorTexture = modelTex
-        } catch let error {
-            print(error)
-        }
+        
         
         // Create a MetalKit mesh buffer allocator so that ModelIO will load mesh data directly into
         //   Metal buffers accessible by the GPU
@@ -445,6 +451,7 @@ class Renderer {
 //        }
         guard let url = Bundle.main.url(forResource: object, withExtension: "obj") else {
             fatalError("Failed to find model file.")
+            
         }
         
         let asset = MDLAsset(url: url, vertexDescriptor: vertexDescriptor, bufferAllocator: metalAllocator)
@@ -453,9 +460,8 @@ class Renderer {
         }
         
         // Use ModelIO to create a box mesh as our object
-        //let mesh = MDLMesh(boxWithExtent: vector3(1, 1, 1), segments: vector3(1, 1, 1), inwardNormals: false, geometryType: .triangles, allocator: metalAllocator)
+//        let mesh = MDLMesh(boxWithExtent: vector3(1, 1, 1), segments: vector3(1, 1, 1), inwardNormals: false, geometryType: .triangles, allocator: metalAllocator)
         let mesh = object //MDLMesh(sphereWithExtent: vector3(0.075, 0.075, 0.075), segments: vector2(10, 10), inwardNormals: false, geometryType: .triangles, allocator: metalAllocator)
-        
         // Perform the format/relayout of mesh vertices by setting the new vertex descriptor in our
         //   Model IO mesh
         mesh.vertexDescriptor = vertexDescriptor
@@ -582,8 +588,9 @@ class Renderer {
         }
         
         if depthData != nil {
-            let depthBuffer = depthData!.depthDataMap
+            var depthBuffer = depthData!.depthDataMap
             capturedImageTextureDepth = createTexture(fromPixelBuffer: depthBuffer, pixelFormat: .r32Float, planeIndex: 0)
+//            capturedImageTextureDepth = createTexture(fromPixelBuffer: depthBuffer, pixelFormat: .rg16Uint, planeIndex: 0)
             capturedImageTextureY = createTexture(fromPixelBuffer: pixelBuffer, pixelFormat:.r8Unorm, planeIndex:0)
             capturedImageTextureCbCr = createTexture(fromPixelBuffer: pixelBuffer, pixelFormat:.rg8Unorm, planeIndex:1)
             

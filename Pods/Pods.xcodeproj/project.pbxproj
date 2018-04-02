@@ -8,35 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		002C5A18BC7333DBD7BB492F35721CAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0739EF16EE19E441AB7C353D7EC92329 /* LGSideMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0739EF16EE19E441AB7C353D7EC92329 /* LGSideMenuSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AFD0DE04A335C7D62B7DF71B4AEE5D /* LGSideMenuSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1235AE35DD228E3F382D8E1DB7385BF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		147A694AEEF09AED23BDA121210C1C02 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C9D4AC2CD424E12B04C4387B73F4D3 /* LGSideMenuController-dummy.m */; };
-		2C88036A6734A25AD3BAB7A0FC453BCA /* Pods-SceneSwap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF1C591C40C7162DC3DD288E38A2AF7 /* Pods-SceneSwap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		373AC6B0FA384BDF6099C956F31DE6BC /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */; };
-		3AF64ECC40D98E8EC9F9568A8DA0F78B /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5010D602D86C7BAE5657EE8F67DCC1C7 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */; };
+		1413188C709E9BB29D1F962ED18E4609 /* TWWatchdogInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 8102D5C568CDA4853B154C06B16C0926 /* TWWatchdogInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		147A694AEEF09AED23BDA121210C1C02 /* LGSideMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5384727955A4519DD89AE32671A3EFC /* LGSideMenuController-dummy.m */; };
+		2077FEFF736774B67CC6C334B8E42B85 /* Pods-SceneSwap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF1C591C40C7162DC3DD288E38A2AF7 /* Pods-SceneSwap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		209AD4AC246CC056509227D7D5D31F64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		373AC6B0FA384BDF6099C956F31DE6BC /* UIViewController+LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78808EC6DF14DF8E09F7C813489E071E /* UIViewController+LGSideMenuController.m */; };
+		3A47D5CA9F08053BC32ABA7125F47797 /* TWWatchdogInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E19C3770E01C486AB6CB0DBEDD0822 /* TWWatchdogInspector.m */; };
+		3AF64ECC40D98E8EC9F9568A8DA0F78B /* LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF443E933F90242CAEBED95C5C98A711 /* LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43081AE1D6CC83A017289B392F8C9F68 /* Pods-SceneSwap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECCE736A1E54302337CF9FC6EF2566 /* Pods-SceneSwap-dummy.m */; };
+		4EB0755812EF4E934634CEFB8AAF226D /* TWWatchdogInspectorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 226A2F289FBBE9F484813E866616D8FC /* TWWatchdogInspectorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5010D602D86C7BAE5657EE8F67DCC1C7 /* LGSideMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC42D6283C84182F55E699287CA4F50A /* LGSideMenuView.m */; };
 		5B51B416DFED8AC0BF2D547E54CE8C19 /* Pods-SceneSwapUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 74BF6B1F15CE936AFD62859F2A8BA9DF /* Pods-SceneSwapUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66FF3ECCC8D6D65237027DEC7B5B84A8 /* LGSideMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D0F6AE06931E33B58FE22428A977CE /* LGSideMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C621C5A3076FBC97BFB4F367993A5BB /* LGSideMenuGesturesHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D09B0AC70AD56B27CBFFE3BC1D77F79 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */; };
-		8A8AD59125675F6CF0A49217216A408C /* UIViewController+LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98ADA5B9F5CC01ACC6221499B78A40D5 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */; };
-		A7517960B1B80338ADB40F4FB811389A /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */; };
-		BE9870B92F8854212B1D7C8DE14FA71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		609D62FDB724AC63FDADA4828F02C01C /* WatchdogInspector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE18A8C1DD98094AA91C1C103640F82 /* WatchdogInspector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66FF3ECCC8D6D65237027DEC7B5B84A8 /* LGSideMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A8E9C800DCE977B116AFC8FF7E5538 /* LGSideMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C621C5A3076FBC97BFB4F367993A5BB /* LGSideMenuGesturesHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EBDCF54AF543766C9B8395BDEFA4CF4 /* LGSideMenuGesturesHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D09B0AC70AD56B27CBFFE3BC1D77F79 /* LGSideMenuGesturesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2173AB3A8684E6D8F4DD26660ACE7 /* LGSideMenuGesturesHandler.m */; };
+		8A8AD59125675F6CF0A49217216A408C /* UIViewController+LGSideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D32583D47F15DF0FFD3FC753AF42F6A /* UIViewController+LGSideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98ADA5B9F5CC01ACC6221499B78A40D5 /* LGSideMenuBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DCC6D3785A7F823D84C344EE650EBA /* LGSideMenuBorderView.m */; };
+		A7517960B1B80338ADB40F4FB811389A /* LGSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7023D96BC6DD657B0AEAE929B57AE21E /* LGSideMenuController.m */; };
+		B01EBC9C4ED7CE59A4A6DC31ABDF576D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BB05797C189923C6867B0A1BA3ED53E3 /* TWWatchdogInspectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA59CBB730464518CD3FF7BFA94B0EC /* TWWatchdogInspectorViewController.m */; };
 		BFA43274A11980FA6658CB838663B742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CB62266D292F21C6B7CD2494EA23496A /* LGSideMenuHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCA7D6DCFB3E36CA3E9A043D487878D3 /* LGSideMenuBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3BDE7D79CF0E42D1885ECE7EE5ABB0D /* LGSideMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD261999E29C17B693795E9334A0934A /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */; };
+		CB62266D292F21C6B7CD2494EA23496A /* LGSideMenuHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = D5494AE65A3FD4D67A5A3A4705664670 /* LGSideMenuHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCA7D6DCFB3E36CA3E9A043D487878D3 /* LGSideMenuBorderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 55377E80975A6768D270F0DFAF764CE9 /* LGSideMenuBorderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3BDE7D79CF0E42D1885ECE7EE5ABB0D /* LGSideMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = BB73C9EAE6201BD3E58EF5AF3B3F1731 /* LGSideMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6B282ADC9C27170B88D7D31892379AE /* WatchdogInspector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CD834937F75E923364600EC6CE24C5 /* WatchdogInspector-dummy.m */; };
+		DD261999E29C17B693795E9334A0934A /* LGSideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = F20DDEB3CABE220891865A202FC3C793 /* LGSideMenuSegue.m */; };
 		DEBEE1BCF2F30630C1BF476B1DD767A3 /* Pods-SceneSwapTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F91D74028D3AD7632E0ACE8D1DCD2C /* Pods-SceneSwapTests-dummy.m */; };
 		E2CEFCB4BA77039E2668323BCA337FFE /* Pods-SceneSwapTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10872FCA43ADE38C533BC5B90B5C9C71 /* Pods-SceneSwapTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E52FCAF2A9C126F6328DF511055C0985 /* Pods-SceneSwapUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9104084A6A513D270F4CEDD9A627CBC /* Pods-SceneSwapUITests-dummy.m */; };
-		EEA94A207FB5A8A62E67A4D42F3ED02D /* Pods-SceneSwap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ECCE736A1E54302337CF9FC6EF2566 /* Pods-SceneSwap-dummy.m */; };
-		F8913782848E07F154FAACAEFBAFA71A /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */; };
+		F8913782848E07F154FAACAEFBAFA71A /* LGSideMenuHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EFF9A1D8A1663134D98E6B662BBD76 /* LGSideMenuHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9926665708438142C6D00AEE6238EBB0 /* PBXContainerItemProxy */ = {
+		070CA727F574AFDFADCADC4585957D0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F630BD9F1C4FB108FCE6E9C949B22DDC;
+			remoteInfo = WatchdogInspector;
+		};
+		524E7CBFD599598253A2A986E6BCF7B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -47,60 +61,71 @@
 
 /* Begin PBXFileReference section */
 		00F36F6291405D41EBD5F34A67547BE9 /* Pods-SceneSwapTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SceneSwapTests.modulemap"; sourceTree = "<group>"; };
-		0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuGesturesHandler.h; path = LGSideMenuController/LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
 		07E3AEB0BD5879CFDC00A202D0FFE458 /* Pods-SceneSwapUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SceneSwapUITests.modulemap"; sourceTree = "<group>"; };
 		0A4196054A908F3B4718C0CE6A977975 /* Pods-SceneSwapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwapUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0C8D53647DE6650E2A18EAC73E12A5B9 /* Pods-SceneSwap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SceneSwap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D083A83D570E1FB9978F4C96469E316 /* Pods_SceneSwapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwapTests.framework; path = "Pods-SceneSwapTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10872FCA43ADE38C533BC5B90B5C9C71 /* Pods-SceneSwapTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SceneSwapTests-umbrella.h"; sourceTree = "<group>"; };
+		11A8E9C800DCE977B116AFC8FF7E5538 /* LGSideMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-umbrella.h"; sourceTree = "<group>"; };
 		1B99BB6FDEB4D5875ADEC2C50C7AF3A4 /* Pods-SceneSwap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SceneSwap-acknowledgements.plist"; sourceTree = "<group>"; };
 		1C09DBDC8CAE2A152B6D69561AD3C8CA /* Pods-SceneSwapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwapTests.release.xcconfig"; sourceTree = "<group>"; };
+		226A2F289FBBE9F484813E866616D8FC /* TWWatchdogInspectorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWWatchdogInspectorViewController.h; path = Classes/TWWatchdogInspectorViewController.h; sourceTree = "<group>"; };
 		22ECCE736A1E54302337CF9FC6EF2566 /* Pods-SceneSwap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SceneSwap-dummy.m"; sourceTree = "<group>"; };
+		244B1B1240545DB71CC0660B8B94F5E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2640C2457225310446324FA560E1C9E2 /* Pods-SceneSwapUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SceneSwapUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
+		2EBBFC8DDFC7DF0E160F3E4C9D4F7AA2 /* WatchdogInspector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WatchdogInspector-prefix.pch"; sourceTree = "<group>"; };
+		32CD834937F75E923364600EC6CE24C5 /* WatchdogInspector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WatchdogInspector-dummy.m"; sourceTree = "<group>"; };
 		39FB949EEF119B9B690B9EDEB0782608 /* Pods-SceneSwap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SceneSwap.modulemap"; sourceTree = "<group>"; };
 		3B3274FF28C3D15632E5B9FC0E79459C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuBorderView.h; path = LGSideMenuController/LGSideMenuBorderView.h; sourceTree = "<group>"; };
-		4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LGSideMenuController.h"; path = "LGSideMenuController/UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
-		57C9D4AC2CD424E12B04C4387B73F4D3 /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
-		5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuHelper.m; path = LGSideMenuController/LGSideMenuHelper.m; sourceTree = "<group>"; };
+		4CA59CBB730464518CD3FF7BFA94B0EC /* TWWatchdogInspectorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWWatchdogInspectorViewController.m; path = Classes/TWWatchdogInspectorViewController.m; sourceTree = "<group>"; };
+		55377E80975A6768D270F0DFAF764CE9 /* LGSideMenuBorderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuBorderView.h; path = LGSideMenuController/LGSideMenuBorderView.h; sourceTree = "<group>"; };
+		5D32583D47F15DF0FFD3FC753AF42F6A /* UIViewController+LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LGSideMenuController.h"; path = "LGSideMenuController/UIViewController+LGSideMenuController.h"; sourceTree = "<group>"; };
 		5DF1C591C40C7162DC3DD288E38A2AF7 /* Pods-SceneSwap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SceneSwap-umbrella.h"; sourceTree = "<group>"; };
 		5FF3F70484C8675B16818558A0EB263C /* Pods-SceneSwapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwapUITests.release.xcconfig"; sourceTree = "<group>"; };
-		62D591E1C4DAC18323511B2B474E348A /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		63FE926C068D9442091AF0D867CF76A2 /* Pods_SceneSwap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwap.framework; path = "Pods-SceneSwap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
-		6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuBorderView.m; path = LGSideMenuController/LGSideMenuBorderView.m; sourceTree = "<group>"; };
+		6BEEC187BF8931F5E1B88568966B3C47 /* Pods_SceneSwapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwapUITests.framework; path = "Pods-SceneSwapUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7023D96BC6DD657B0AEAE929B57AE21E /* LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuController.m; path = LGSideMenuController/LGSideMenuController.m; sourceTree = "<group>"; };
 		74BF6B1F15CE936AFD62859F2A8BA9DF /* Pods-SceneSwapUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SceneSwapUITests-umbrella.h"; sourceTree = "<group>"; };
-		74CD36CB9D9432476AEECD2ECE2CDDF1 /* Pods_SceneSwapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwapTests.framework; path = "Pods-SceneSwapTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7555A382C7C8B66728477D07831C02C1 /* LGSideMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LGSideMenuController.modulemap; sourceTree = "<group>"; };
-		76F6D10B3A111AC7BBBE10C0B6B7B5A9 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
-		7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuView.m; path = LGSideMenuController/LGSideMenuView.m; sourceTree = "<group>"; };
-		7FF97D4B2B1550B982D48C103AB27A76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78808EC6DF14DF8E09F7C813489E071E /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LGSideMenuController.m"; path = "LGSideMenuController/UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
+		7EBDCF54AF543766C9B8395BDEFA4CF4 /* LGSideMenuGesturesHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuGesturesHandler.h; path = LGSideMenuController/LGSideMenuGesturesHandler.h; sourceTree = "<group>"; };
+		7FE18A8C1DD98094AA91C1C103640F82 /* WatchdogInspector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WatchdogInspector-umbrella.h"; sourceTree = "<group>"; };
+		8102D5C568CDA4853B154C06B16C0926 /* TWWatchdogInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TWWatchdogInspector.h; path = Classes/TWWatchdogInspector.h; sourceTree = "<group>"; };
 		823ABD01BEF604520B71DBF975420D58 /* Pods-SceneSwapTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SceneSwapTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		83E9839F97A09A383B45A342E1B272AD /* LGSideMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LGSideMenuController.modulemap; sourceTree = "<group>"; };
 		88892D8D561693B36A92D4AFEDBDCA45 /* Pods-SceneSwap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwap-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A5A6AC794E8DBD74E2D59DF5983450D /* Pods-SceneSwapUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwapUITests-resources.sh"; sourceTree = "<group>"; };
-		9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuHelper.h; path = LGSideMenuController/LGSideMenuHelper.h; sourceTree = "<group>"; };
+		A06A0BEE7DD33B5FE2031018D4CB54FB /* LGSideMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGSideMenuController.xcconfig; sourceTree = "<group>"; };
+		A6AFD0DE04A335C7D62B7DF71B4AEE5D /* LGSideMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuSegue.h; path = LGSideMenuController/LGSideMenuSegue.h; sourceTree = "<group>"; };
+		A6E19C3770E01C486AB6CB0DBEDD0822 /* TWWatchdogInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TWWatchdogInspector.m; path = Classes/TWWatchdogInspector.m; sourceTree = "<group>"; };
 		A7F91D74028D3AD7632E0ACE8D1DCD2C /* Pods-SceneSwapTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SceneSwapTests-dummy.m"; sourceTree = "<group>"; };
+		A8521700A1912F79A6F350F5C558EFB5 /* WatchdogInspector.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WatchdogInspector.xcconfig; sourceTree = "<group>"; };
 		A89D8FC2B41C357B71F120BF08EC132B /* Pods-SceneSwap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwap.release.xcconfig"; sourceTree = "<group>"; };
-		B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuGesturesHandler.m; path = LGSideMenuController/LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
+		A8CD0AB5D3B191F1AB6A280F747AD725 /* WatchdogInspector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WatchdogInspector.framework; path = WatchdogInspector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB73C9EAE6201BD3E58EF5AF3B3F1731 /* LGSideMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuView.h; path = LGSideMenuController/LGSideMenuView.h; sourceTree = "<group>"; };
 		BB7ABEE874C8F23796ECFF0B6F01D9FD /* Pods-SceneSwap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwap-resources.sh"; sourceTree = "<group>"; };
-		C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuView.h; path = LGSideMenuController/LGSideMenuView.h; sourceTree = "<group>"; };
 		C9104084A6A513D270F4CEDD9A627CBC /* Pods-SceneSwapUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SceneSwapUITests-dummy.m"; sourceTree = "<group>"; };
 		CC71666ABB1D0F1BC278873629D3712D /* Pods-SceneSwapTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwapTests-resources.sh"; sourceTree = "<group>"; };
 		CEA00EEDDB68B9CE9F87D3A3CFF5C30D /* Pods-SceneSwapUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwapUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D2DCC6D3785A7F823D84C344EE650EBA /* LGSideMenuBorderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuBorderView.m; path = LGSideMenuController/LGSideMenuBorderView.m; sourceTree = "<group>"; };
+		D5330EA151DC57804C7F1515D03A208D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5384727955A4519DD89AE32671A3EFC /* LGSideMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGSideMenuController-dummy.m"; sourceTree = "<group>"; };
 		D549046CA3EF6F7638F5EAE2BB46ED73 /* Pods-SceneSwapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwapTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuSegue.m; path = LGSideMenuController/LGSideMenuSegue.m; sourceTree = "<group>"; };
-		DCB855C12EDE887191F8AE1C59788A58 /* Pods_SceneSwapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwapUITests.framework; path = "Pods-SceneSwapUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5494AE65A3FD4D67A5A3A4705664670 /* LGSideMenuHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuHelper.h; path = LGSideMenuController/LGSideMenuHelper.h; sourceTree = "<group>"; };
+		D7140DE7E3E13257DA9C424BEAB16D27 /* LGSideMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-prefix.pch"; sourceTree = "<group>"; };
+		DC42D6283C84182F55E699287CA4F50A /* LGSideMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuView.m; path = LGSideMenuController/LGSideMenuView.m; sourceTree = "<group>"; };
+		DF443E933F90242CAEBED95C5C98A711 /* LGSideMenuController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuController.h; path = LGSideMenuController/LGSideMenuController.h; sourceTree = "<group>"; };
 		E2DF5BED8B4B906742583D3EA16E0A8C /* Pods-SceneSwapTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SceneSwapTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E7FA0A9D041734D963CA1D9FE15AD313 /* LGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LGSideMenuController.framework; path = LGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A08858F68EE1C9079D34672A5EC458 /* LGSideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LGSideMenuController.framework; path = LGSideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7D2173AB3A8684E6D8F4DD26660ACE7 /* LGSideMenuGesturesHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuGesturesHandler.m; path = LGSideMenuController/LGSideMenuGesturesHandler.m; sourceTree = "<group>"; };
 		E951615AFDC08E03506D81E4C5B4F4E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGSideMenuSegue.h; path = LGSideMenuController/LGSideMenuSegue.h; sourceTree = "<group>"; };
+		E953FB6F0F60CFD1BF729ED5D6268376 /* WatchdogInspector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WatchdogInspector.modulemap; sourceTree = "<group>"; };
+		E9EFF9A1D8A1663134D98E6B662BBD76 /* LGSideMenuHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuHelper.m; path = LGSideMenuController/LGSideMenuHelper.m; sourceTree = "<group>"; };
+		F20DDEB3CABE220891865A202FC3C793 /* LGSideMenuSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGSideMenuSegue.m; path = LGSideMenuController/LGSideMenuSegue.m; sourceTree = "<group>"; };
 		F538CB30C745EE1FA1721252DE67D3E2 /* Pods-SceneSwapTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SceneSwapTests-frameworks.sh"; sourceTree = "<group>"; };
 		F67B692173FA0530808D9C2F057AB32B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7D0F6AE06931E33B58FE22428A977CE /* LGSideMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGSideMenuController-umbrella.h"; sourceTree = "<group>"; };
-		F9B1D57A492A6BA09999FC237A95B642 /* Pods_SceneSwap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SceneSwap.framework; path = "Pods-SceneSwap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD005D710709FC6CF59384581220E223 /* Pods-SceneSwap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SceneSwap.debug.xcconfig"; sourceTree = "<group>"; };
-		FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+LGSideMenuController.m"; path = "LGSideMenuController/UIViewController+LGSideMenuController.m"; sourceTree = "<group>"; };
 		FFBEA112EC2D878019065E49A3728D60 /* Pods-SceneSwapUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SceneSwapUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,19 +138,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75172F3A3BA37D9D23662BBB5115C05A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE9870B92F8854212B1D7C8DE14FA71A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9F3237C60E090A914F5DF7F7D8FCB7CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				002C5A18BC7333DBD7BB492F35721CAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA44BE87CD5BD86462B1C04B37E73913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01EBC9C4ED7CE59A4A6DC31ABDF576D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCF82DADBD36C4368003455AD626FA88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209AD4AC246CC056509227D7D5D31F64 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,12 +183,53 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		09A97BE1275A36D823A9B802D043CE1A /* Pods */ = {
+		47D2F6ADCB85DE62D1C7D6877B3C21A5 /* LGSideMenuController */ = {
 			isa = PBXGroup;
 			children = (
-				BC3FF4F298100B20A82EABBC15D85392 /* LGSideMenuController */,
+				55377E80975A6768D270F0DFAF764CE9 /* LGSideMenuBorderView.h */,
+				D2DCC6D3785A7F823D84C344EE650EBA /* LGSideMenuBorderView.m */,
+				DF443E933F90242CAEBED95C5C98A711 /* LGSideMenuController.h */,
+				7023D96BC6DD657B0AEAE929B57AE21E /* LGSideMenuController.m */,
+				7EBDCF54AF543766C9B8395BDEFA4CF4 /* LGSideMenuGesturesHandler.h */,
+				E7D2173AB3A8684E6D8F4DD26660ACE7 /* LGSideMenuGesturesHandler.m */,
+				D5494AE65A3FD4D67A5A3A4705664670 /* LGSideMenuHelper.h */,
+				E9EFF9A1D8A1663134D98E6B662BBD76 /* LGSideMenuHelper.m */,
+				A6AFD0DE04A335C7D62B7DF71B4AEE5D /* LGSideMenuSegue.h */,
+				F20DDEB3CABE220891865A202FC3C793 /* LGSideMenuSegue.m */,
+				BB73C9EAE6201BD3E58EF5AF3B3F1731 /* LGSideMenuView.h */,
+				DC42D6283C84182F55E699287CA4F50A /* LGSideMenuView.m */,
+				5D32583D47F15DF0FFD3FC753AF42F6A /* UIViewController+LGSideMenuController.h */,
+				78808EC6DF14DF8E09F7C813489E071E /* UIViewController+LGSideMenuController.m */,
+				7071AC45C919A57C312CEFF87E0B010E /* Support Files */,
 			);
-			name = Pods;
+			name = LGSideMenuController;
+			path = LGSideMenuController;
+			sourceTree = "<group>";
+		};
+		6004845927428AD0C115256B69EB4AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4A08858F68EE1C9079D34672A5EC458 /* LGSideMenuController.framework */,
+				63FE926C068D9442091AF0D867CF76A2 /* Pods_SceneSwap.framework */,
+				0D083A83D570E1FB9978F4C96469E316 /* Pods_SceneSwapTests.framework */,
+				6BEEC187BF8931F5E1B88568966B3C47 /* Pods_SceneSwapUITests.framework */,
+				A8CD0AB5D3B191F1AB6A280F747AD725 /* WatchdogInspector.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7071AC45C919A57C312CEFF87E0B010E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5330EA151DC57804C7F1515D03A208D /* Info.plist */,
+				83E9839F97A09A383B45A342E1B272AD /* LGSideMenuController.modulemap */,
+				A06A0BEE7DD33B5FE2031018D4CB54FB /* LGSideMenuController.xcconfig */,
+				D5384727955A4519DD89AE32671A3EFC /* LGSideMenuController-dummy.m */,
+				D7140DE7E3E13257DA9C424BEAB16D27 /* LGSideMenuController-prefix.pch */,
+				11A8E9C800DCE977B116AFC8FF7E5538 /* LGSideMenuController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LGSideMenuController";
 			sourceTree = "<group>";
 		};
 		7B8DFE1B78807452632115C41C21BBCD /* Pods-SceneSwapUITests */ = {
@@ -176,24 +250,13 @@
 			path = "Target Support Files/Pods-SceneSwapUITests";
 			sourceTree = "<group>";
 		};
-		7D0DF7F0E4B0F93DA1D5DBFE55FE83C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E7FA0A9D041734D963CA1D9FE15AD313 /* LGSideMenuController.framework */,
-				F9B1D57A492A6BA09999FC237A95B642 /* Pods_SceneSwap.framework */,
-				74CD36CB9D9432476AEECD2ECE2CDDF1 /* Pods_SceneSwapTests.framework */,
-				DCB855C12EDE887191F8AE1C59788A58 /* Pods_SceneSwapUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				09A97BE1275A36D823A9B802D043CE1A /* Pods */,
-				7D0DF7F0E4B0F93DA1D5DBFE55FE83C0 /* Products */,
+				BF2B7D7E01674DD202B810CE876F8FDE /* Pods */,
+				6004845927428AD0C115256B69EB4AE2 /* Products */,
 				0024495C748AD4A8B48A34A446E79EB0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -206,27 +269,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC3FF4F298100B20A82EABBC15D85392 /* LGSideMenuController */ = {
+		BF2B7D7E01674DD202B810CE876F8FDE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3D42A29BDE901C2BDB481E4354E2B431 /* LGSideMenuBorderView.h */,
-				6FFFEB9C67B02BAF34F96B86AB136F9B /* LGSideMenuBorderView.m */,
-				6898D5BFE09C74FFD47BC1D4F7A55514 /* LGSideMenuController.h */,
-				2755B5B82AFC0CD80707C6190C3991DA /* LGSideMenuController.m */,
-				0600AB6282227FFC16DE0EF7F67720A7 /* LGSideMenuGesturesHandler.h */,
-				B970007EAF7E3449D7DD3E274C5D9678 /* LGSideMenuGesturesHandler.m */,
-				9F10A34A076C32ED809E500CD2A60053 /* LGSideMenuHelper.h */,
-				5B8EC5E3D5579CF2BB235A961FB179BE /* LGSideMenuHelper.m */,
-				ECE1B34517FE950C9F502D123A0683E9 /* LGSideMenuSegue.h */,
-				D7FB7EB5569A06321744D707D5FB04D5 /* LGSideMenuSegue.m */,
-				C56CC31BEF1040EF206AFE40900E813D /* LGSideMenuView.h */,
-				7BC2A0810666C74C93AED17E902204EE /* LGSideMenuView.m */,
-				4165074B1287A2D5FC16CA1A9BCF480D /* UIViewController+LGSideMenuController.h */,
-				FD4662C87D11030D8FF5356B3260DD25 /* UIViewController+LGSideMenuController.m */,
-				F238808D452599397C531B64343933B4 /* Support Files */,
+				47D2F6ADCB85DE62D1C7D6877B3C21A5 /* LGSideMenuController */,
+				DAD743B49A6A4C2733A8F6612732DE6E /* WatchdogInspector */,
 			);
-			name = LGSideMenuController;
-			path = LGSideMenuController;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C024D02BA683431A03F516D9EE8A00C8 /* Pods-SceneSwap */ = {
@@ -255,6 +304,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		DAD743B49A6A4C2733A8F6612732DE6E /* WatchdogInspector */ = {
+			isa = PBXGroup;
+			children = (
+				8102D5C568CDA4853B154C06B16C0926 /* TWWatchdogInspector.h */,
+				A6E19C3770E01C486AB6CB0DBEDD0822 /* TWWatchdogInspector.m */,
+				226A2F289FBBE9F484813E866616D8FC /* TWWatchdogInspectorViewController.h */,
+				4CA59CBB730464518CD3FF7BFA94B0EC /* TWWatchdogInspectorViewController.m */,
+				E04852FC35C976E52EF5A87BA6609100 /* Support Files */,
+			);
+			name = WatchdogInspector;
+			path = WatchdogInspector;
+			sourceTree = "<group>";
+		};
+		E04852FC35C976E52EF5A87BA6609100 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				244B1B1240545DB71CC0660B8B94F5E8 /* Info.plist */,
+				E953FB6F0F60CFD1BF729ED5D6268376 /* WatchdogInspector.modulemap */,
+				A8521700A1912F79A6F350F5C558EFB5 /* WatchdogInspector.xcconfig */,
+				32CD834937F75E923364600EC6CE24C5 /* WatchdogInspector-dummy.m */,
+				2EBBFC8DDFC7DF0E160F3E4C9D4F7AA2 /* WatchdogInspector-prefix.pch */,
+				7FE18A8C1DD98094AA91C1C103640F82 /* WatchdogInspector-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WatchdogInspector";
+			sourceTree = "<group>";
+		};
 		E4A6E03B00E3D9062C75F5505387B71F /* Pods-SceneSwapTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,20 +347,6 @@
 			);
 			name = "Pods-SceneSwapTests";
 			path = "Target Support Files/Pods-SceneSwapTests";
-			sourceTree = "<group>";
-		};
-		F238808D452599397C531B64343933B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7FF97D4B2B1550B982D48C103AB27A76 /* Info.plist */,
-				7555A382C7C8B66728477D07831C02C1 /* LGSideMenuController.modulemap */,
-				62D591E1C4DAC18323511B2B474E348A /* LGSideMenuController.xcconfig */,
-				57C9D4AC2CD424E12B04C4387B73F4D3 /* LGSideMenuController-dummy.m */,
-				76F6D10B3A111AC7BBBE10C0B6B7B5A9 /* LGSideMenuController-prefix.pch */,
-				F7D0F6AE06931E33B58FE22428A977CE /* LGSideMenuController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LGSideMenuController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,11 +383,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2592D1069ED7916937E464F1AF56B05 /* Headers */ = {
+		D1E8545C66963A89179547CE52C65963 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C88036A6734A25AD3BAB7A0FC453BCA /* Pods-SceneSwap-umbrella.h in Headers */,
+				2077FEFF736774B67CC6C334B8E42B85 /* Pods-SceneSwap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3BC383939B487520E707BC88348D15D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413188C709E9BB29D1F962ED18E4609 /* TWWatchdogInspector.h in Headers */,
+				4EB0755812EF4E934634CEFB8AAF226D /* TWWatchdogInspectorViewController.h in Headers */,
+				609D62FDB724AC63FDADA4828F02C01C /* WatchdogInspector-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,25 +418,26 @@
 			);
 			name = LGSideMenuController;
 			productName = LGSideMenuController;
-			productReference = E7FA0A9D041734D963CA1D9FE15AD313 /* LGSideMenuController.framework */;
+			productReference = E4A08858F68EE1C9079D34672A5EC458 /* LGSideMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		197B9E25F8D80219C87214DB1939A0A4 /* Pods-SceneSwap */ = {
+		11ABD8C3070AF4BA5DD8FB737283917B /* Pods-SceneSwap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FDF45660E3F539B4B14269CA45B6DB6 /* Build configuration list for PBXNativeTarget "Pods-SceneSwap" */;
+			buildConfigurationList = AF941F9105A447943DC058E5B189D7DF /* Build configuration list for PBXNativeTarget "Pods-SceneSwap" */;
 			buildPhases = (
-				EAE84030FDA1E35522B41E8F1C29D5B3 /* Sources */,
-				75172F3A3BA37D9D23662BBB5115C05A /* Frameworks */,
-				E2592D1069ED7916937E464F1AF56B05 /* Headers */,
+				803B7BB7251D91114C8FA3BA643E3D98 /* Sources */,
+				AA44BE87CD5BD86462B1C04B37E73913 /* Frameworks */,
+				D1E8545C66963A89179547CE52C65963 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F850DA42AF36B262FBBEDB1AC28B7F5 /* PBXTargetDependency */,
+				ACEA0FAB54D749309BA48F64AE7C6B4A /* PBXTargetDependency */,
+				08F1B649DDF1C986C474209D265FD392 /* PBXTargetDependency */,
 			);
 			name = "Pods-SceneSwap";
 			productName = "Pods-SceneSwap";
-			productReference = F9B1D57A492A6BA09999FC237A95B642 /* Pods_SceneSwap.framework */;
+			productReference = 63FE926C068D9442091AF0D867CF76A2 /* Pods_SceneSwap.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		296A0C6C59B7A053838A8F7425C49E9A /* Pods-SceneSwapUITests */ = {
@@ -381,7 +454,7 @@
 			);
 			name = "Pods-SceneSwapUITests";
 			productName = "Pods-SceneSwapUITests";
-			productReference = DCB855C12EDE887191F8AE1C59788A58 /* Pods_SceneSwapUITests.framework */;
+			productReference = 6BEEC187BF8931F5E1B88568966B3C47 /* Pods_SceneSwapUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6D7F99D9D0F28E5616841C58812669A6 /* Pods-SceneSwapTests */ = {
@@ -398,7 +471,24 @@
 			);
 			name = "Pods-SceneSwapTests";
 			productName = "Pods-SceneSwapTests";
-			productReference = 74CD36CB9D9432476AEECD2ECE2CDDF1 /* Pods_SceneSwapTests.framework */;
+			productReference = 0D083A83D570E1FB9978F4C96469E316 /* Pods_SceneSwapTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F630BD9F1C4FB108FCE6E9C949B22DDC /* WatchdogInspector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54CAC3035BE2C7A4B7CA4ADAF746C9E /* Build configuration list for PBXNativeTarget "WatchdogInspector" */;
+			buildPhases = (
+				3900EF329014C154790F884F1B7D889E /* Sources */,
+				CCF82DADBD36C4368003455AD626FA88 /* Frameworks */,
+				F3BC383939B487520E707BC88348D15D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchdogInspector;
+			productName = WatchdogInspector;
+			productReference = A8CD0AB5D3B191F1AB6A280F747AD725 /* WatchdogInspector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -418,14 +508,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7D0DF7F0E4B0F93DA1D5DBFE55FE83C0 /* Products */;
+			productRefGroup = 6004845927428AD0C115256B69EB4AE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0A667609BF9BD15CE73A76A27D5C8C4B /* LGSideMenuController */,
-				197B9E25F8D80219C87214DB1939A0A4 /* Pods-SceneSwap */,
+				11ABD8C3070AF4BA5DD8FB737283917B /* Pods-SceneSwap */,
 				6D7F99D9D0F28E5616841C58812669A6 /* Pods-SceneSwapTests */,
 				296A0C6C59B7A053838A8F7425C49E9A /* Pods-SceneSwapUITests */,
+				F630BD9F1C4FB108FCE6E9C949B22DDC /* WatchdogInspector */,
 			);
 		};
 /* End PBXProject section */
@@ -446,11 +537,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3900EF329014C154790F884F1B7D889E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A47D5CA9F08053BC32ABA7125F47797 /* TWWatchdogInspector.m in Sources */,
+				BB05797C189923C6867B0A1BA3ED53E3 /* TWWatchdogInspectorViewController.m in Sources */,
+				D6B282ADC9C27170B88D7D31892379AE /* WatchdogInspector-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EA28AE9A171C1386BD435CC67AA537B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E52FCAF2A9C126F6328DF511055C0985 /* Pods-SceneSwapUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803B7BB7251D91114C8FA3BA643E3D98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081AE1D6CC83A017289B392F8C9F68 /* Pods-SceneSwap-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,26 +571,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAE84030FDA1E35522B41E8F1C29D5B3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EEA94A207FB5A8A62E67A4D42F3ED02D /* Pods-SceneSwap-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8F850DA42AF36B262FBBEDB1AC28B7F5 /* PBXTargetDependency */ = {
+		08F1B649DDF1C986C474209D265FD392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WatchdogInspector;
+			target = F630BD9F1C4FB108FCE6E9C949B22DDC /* WatchdogInspector */;
+			targetProxy = 070CA727F574AFDFADCADC4585957D0B /* PBXContainerItemProxy */;
+		};
+		ACEA0FAB54D749309BA48F64AE7C6B4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LGSideMenuController;
 			target = 0A667609BF9BD15CE73A76A27D5C8C4B /* LGSideMenuController */;
-			targetProxy = 9926665708438142C6D00AEE6238EBB0 /* PBXContainerItemProxy */;
+			targetProxy = 524E7CBFD599598253A2A986E6BCF7B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0B403D489555E08754B6A5586480776E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD005D710709FC6CF59384581220E223 /* Pods-SceneSwap.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SceneSwap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SceneSwap/Pods-SceneSwap.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SceneSwap;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A7F1BB8EA76A474FF9CD867226EA021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8521700A1912F79A6F350F5C558EFB5 /* WatchdogInspector.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WatchdogInspector/WatchdogInspector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WatchdogInspector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WatchdogInspector/WatchdogInspector.modulemap";
+				PRODUCT_NAME = WatchdogInspector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,11 +715,10 @@
 			};
 			name = Debug;
 		};
-		370108EA61970FF6C2017C472B11DDAC /* Debug */ = {
+		46AC4CFBBA5AABCD62B9687EF5C8C7C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD005D710709FC6CF59384581220E223 /* Pods-SceneSwap.debug.xcconfig */;
+			baseConfigurationReference = A8521700A1912F79A6F350F5C558EFB5 /* WatchdogInspector.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -559,24 +728,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SceneSwap/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WatchdogInspector/WatchdogInspector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WatchdogInspector/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SceneSwap/Pods-SceneSwap.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SceneSwap;
+				MODULEMAP_FILE = "Target Support Files/WatchdogInspector/WatchdogInspector.modulemap";
+				PRODUCT_NAME = WatchdogInspector;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		527D5A04D2FC049336C168920A91B3FA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -648,7 +816,7 @@
 		};
 		591CC68EDA4810283BFD7BFDEF79A0B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62D591E1C4DAC18323511B2B474E348A /* LGSideMenuController.xcconfig */;
+			baseConfigurationReference = A06A0BEE7DD33B5FE2031018D4CB54FB /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -709,7 +877,7 @@
 			};
 			name = Debug;
 		};
-		85ECD735A704A077DB493DE77951E6B8 /* Release */ = {
+		8A25C52D3A9F0CC3AE0E11E7D3BD2AEC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A89D8FC2B41C357B71F120BF08EC132B /* Pods-SceneSwap.release.xcconfig */;
 			buildSettings = {
@@ -803,7 +971,7 @@
 		};
 		D8135877ADDAC1D078A33F27565D2DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62D591E1C4DAC18323511B2B474E348A /* LGSideMenuController.xcconfig */;
+			baseConfigurationReference = A06A0BEE7DD33B5FE2031018D4CB54FB /* LGSideMenuController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -895,11 +1063,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FDF45660E3F539B4B14269CA45B6DB6 /* Build configuration list for PBXNativeTarget "Pods-SceneSwap" */ = {
+		A54CAC3035BE2C7A4B7CA4ADAF746C9E /* Build configuration list for PBXNativeTarget "WatchdogInspector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				370108EA61970FF6C2017C472B11DDAC /* Debug */,
-				85ECD735A704A077DB493DE77951E6B8 /* Release */,
+				2A7F1BB8EA76A474FF9CD867226EA021 /* Debug */,
+				46AC4CFBBA5AABCD62B9687EF5C8C7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF941F9105A447943DC058E5B189D7DF /* Build configuration list for PBXNativeTarget "Pods-SceneSwap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B403D489555E08754B6A5586480776E /* Debug */,
+				8A25C52D3A9F0CC3AE0E11E7D3BD2AEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,8 +8,10 @@
 
 import UIKit
 import LGSideMenuController
+import WatchdogInspector
 
 let storyBoardMain = UIStoryboard(name: "Main", bundle: nil)
+let app = UIApplication.shared.delegate as! AppDelegate
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,9 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+//        RRFPSBar.sharedInstance().isHidden = false
+        fpsStart()
         setMenu()
         return true
+    }
+    
+    func fpsStart(){
+        TWWatchdogInspector.start()
+    }
+    func fpsStop(){
+        TWWatchdogInspector.stop()
     }
     
     func setMenu(){

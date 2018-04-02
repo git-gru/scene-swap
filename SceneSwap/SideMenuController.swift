@@ -34,9 +34,7 @@ class SideMenuController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
-        
-        
+        return 4
     }
 
     /*
@@ -53,26 +51,35 @@ class SideMenuController: UITableViewController {
 //        let con = root.viewControllers[0] as! ViewController
         let con = self.sideMenuController?.rootViewController as! ViewController
         if indexPath.row == 0{
-            con.image = "GameTex"
-            con.obj = "Game"
-//            con.startInitials()
+            
+//            con.image = "Ballroom"
+            con.image = #imageLiteral(resourceName: "Ballroom.jpg")
+            con.obj = "Cylinderv01"
+            //            con.startInitials()
             con.change()
             self.sideMenuController?.hideLeftView()
         }
         if indexPath.row == 1{
-            
-            con.image = "Ballroom"
-            con.obj = "Cylinderv01"
+//            con.image = "GameTex"
+            con.image = #imageLiteral(resourceName: "GameTex.png")
+            con.obj = "Game"
 //            con.startInitials()
             con.change()
             self.sideMenuController?.hideLeftView()
         }
         if indexPath.row == 2{
             
-            con.image = "OrbTestImage"
+//            con.image = "OrbTestImage"
+            con.image = #imageLiteral(resourceName: "OrbTestImage.jpeg")
             con.obj = "SelfieSwapOrb"
             //            con.startInitials()
             con.change()
+            self.sideMenuController?.hideLeftView()
+        }
+        if indexPath.row == 3{
+            
+            //            con.startInitials()
+            con.backValueNil()
             self.sideMenuController?.hideLeftView()
         }
         

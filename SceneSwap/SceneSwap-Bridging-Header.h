@@ -3,3 +3,7 @@
 //
 
 #import "ShaderTypes.h"
+
+#ifndef __OPTIMIZE__
+#import "RRFPSBar.h"
+#endif

@@ -1,12 +1,15 @@
 PODS:
   - LGSideMenuController (2.1.1)
+  - WatchdogInspector (1.2.0)
 
 DEPENDENCIES:
   - LGSideMenuController
+  - WatchdogInspector
 
 SPEC CHECKSUMS:
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  WatchdogInspector: 2820de2548107c1e5d712671bd04d81ea649f916
 
-PODFILE CHECKSUM: 80abb10f94285abd5f8ee548a1de1ab344078d4a
+PODFILE CHECKSUM: b071bac1f0e9a447a9190f20048c888f0aaa3a7d
 
 COCOAPODS: 1.4.0

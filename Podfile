@@ -7,6 +7,7 @@ target 'SceneSwap' do
 
   # Pods for SceneSwap
     pod 'LGSideMenuController'
+    pod 'WatchdogInspector'
 
   target 'SceneSwapTests' do
     inherit! :search_paths

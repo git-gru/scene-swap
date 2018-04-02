@@ -18,26 +18,35 @@ extension MTKView : RenderDestinationProvider {
 class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     
+    @IBOutlet weak var frameCounterLabel: UILabel!
     var obj = "Cylinderv01"
-    var image = "Ballroom"
+//    var image = "Ballroom"
+    var image = #imageLiteral(resourceName: "Ballroom.jpg")
+    var fpsEnabled = true
+    
     var session: ARSession!
     var renderer: Renderer!
      @IBOutlet weak private var mixFactorSlider: UISlider!
+    @IBOutlet weak var photoLibraryButton: UIButton!
     
     
-    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
-        let provider = VideoImageTextureProvider(device: MTLCreateSystemDefaultDevice()!, delegate: renderer)
-        return provider
-    }()
+    
+    
+//    lazy var videoImageTextureProvider: VideoImageTextureProvider? = {
+//        let provider = VideoImageTextureProvider(device: MTLCreateSystemDefaultDevice()!, delegate: renderer)
+//        return provider
+//    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let but = UIBarButtonItem(image: #imageLiteral(resourceName: "menu-button"), style: .plain , target: self, action: #selector(self.openLeft))
+        _ = UIBarButtonItem(image: #imageLiteral(resourceName: "menu-button"), style: .plain , target: self, action: #selector(self.openLeft))
 //        self.navigationItem.leftBarButtonItem = but
        startInitials()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap(gestureRecognize:)))
         view.addGestureRecognizer(tapGesture)
+        
+        self.photoLibraryButton.setTitle("Change \n image", for: .normal)
         
     }
     
@@ -57,7 +66,9 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
             }
             
             // Configure the renderer to draw to the view
+//            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
             renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
+//            view.preferredFramesPerSecond = 30
             renderer.drawRectResized(size: view.bounds.size)
         }
     }
@@ -71,10 +82,35 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
 //            renderer = nil
 //        }
 //        startInitials()
-        
-        renderer.loadAssets(image: image, object: obj)
+        if self.obj == "SelfieSwapOrb"{
+            self.photoLibraryButton.isHidden = false
+        }else{
+            self.photoLibraryButton.isHidden = true
+        }
+        renderer.loadAssets(image: self.image, object: self.obj)
     }
     
+    func backValueNil(){
+       
+        
+        if let view = self.view as? MTKView {
+            view.device = MTLCreateSystemDefaultDevice()
+            view.backgroundColor = UIColor.clear
+            view.delegate = self
+            
+            guard view.device != nil else {
+                print("Metal is not supported on this device")
+                return
+            }
+            
+            // Configure the renderer to draw to the view
+            //            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
+         renderer.loadAssets(image: nil, object: self.obj)
+            
+            renderer.drawRectResized(size: view.bounds.size)
+        }
+        
+    }
     
     @IBAction func openLefts(_ sender: Any) {
         self.openLeft()
@@ -82,6 +118,31 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     @objc func openLeft(){
      self.sideMenuController?.showLeftView()
+    }
+    
+    @IBAction func showPhotoLibrary(_ sender: UIButton) {
+        
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            let myPickerController = UIImagePickerController()
+            myPickerController.delegate = self;
+            myPickerController.sourceType = .photoLibrary
+            self.present(myPickerController, animated: true, completion: nil)
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let view = self.view as? MTKView {
+            view.framebufferOnly = false
+            let texture = view.currentDrawable!.texture
+            if let imageRef = texture.toImage() {
+                //                let image = NSImage(CGImage: imageRef, size: NSSize(width: texture.width, height: texture.height))
+                
+                let img = UIImage(cgImage: imageRef, scale: CGFloat(texture.width/texture.height), orientation: UIImageOrientation.up)
+            }
+            
+            
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -134,6 +195,19 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     @IBAction func captureImage(_ sender: Any) {
 //        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        
+        if let view = self.view as? MTKView {
+            view.framebufferOnly = false
+            let texture = view.currentDrawable!.texture
+            if let imageRef = texture.toImage() {
+                //                let image = NSImage(CGImage: imageRef, size: NSSize(width: texture.width, height: texture.height))
+                
+                let img = UIImage(cgImage: imageRef, scale: CGFloat(texture.width/texture.height), orientation: UIImageOrientation.up)
+            }
+            
+            
+        }
+        
         AudioServicesPlaySystemSound(1108)
         if let view = self.view as? MTKView {
             view.framebufferOnly = false
@@ -150,7 +224,18 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         }
     }
     
-   
+    @IBAction func fpsSelects(_ sender: UIButton) {
+        
+        if fpsEnabled == true{
+            app.fpsStop()
+            sender.setTitle("Turn on FPS", for: .normal)
+        }else{
+            app.fpsStart()
+            sender.setTitle("Turn off FPS", for: .normal)
+        }
+        fpsEnabled = !fpsEnabled
+    }
+    
 
     // MARK: - ARSessionDelegate
     
@@ -170,6 +255,7 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
+     
         
     }
     
@@ -217,6 +303,22 @@ extension MTLTexture {
         let cgImageRef = CGImage(width: self.width, height: self.height, bitsPerComponent: 8, bitsPerPixel: 32, bytesPerRow: rowBytes, space: pColorSpace, bitmapInfo: bitmapInfo, provider: provider!, decode: nil, shouldInterpolate: true, intent: CGColorRenderingIntent.defaultIntent)!
         
         return cgImageRef
+    }
+}
+
+
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            renderer.loadAssets(image: image, object: self.obj)
+        }else{
+            print("Something went wrong")
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
 }
 

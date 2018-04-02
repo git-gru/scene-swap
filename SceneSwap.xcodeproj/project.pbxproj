@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40140E47BB6C63B7CCD63BA4 /* Pods_SceneSwapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB6F4E1DC05E51479735A53 /* Pods_SceneSwapTests.framework */; };
 		6520B0EE2068BF3800CBCB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6520B0ED2068BF3800CBCB12 /* ViewController.swift */; };
+		6535E85420723D7900EDA97C /* asfalt-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 6535E85320723D7800EDA97C /* asfalt-light.png */; };
+		6535E858207263E700EDA97C /* RRFPSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6535E857207263E600EDA97C /* RRFPSBar.m */; };
 		65709936206F66C6001AA963 /* VideoImageTextureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */; };
 		6584EF66206E3B2700612B29 /* ImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584EF65206E3B2600612B29 /* ImageFilters.swift */; };
 		6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587DA4E2063F634002FA027 /* SideMenuController.swift */; };
@@ -61,6 +63,9 @@
 		4B1DF23E384A9B7B38696EE1 /* Pods-SceneSwapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapUITests/Pods-SceneSwapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61E4A299DD5BE13A9C1C0B12 /* Pods-SceneSwapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SceneSwapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SceneSwapTests/Pods-SceneSwapTests.release.xcconfig"; sourceTree = "<group>"; };
 		6520B0ED2068BF3800CBCB12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6535E85320723D7800EDA97C /* asfalt-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "asfalt-light.png"; sourceTree = "<group>"; };
+		6535E856207263E600EDA97C /* RRFPSBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RRFPSBar.h; sourceTree = "<group>"; };
+		6535E857207263E600EDA97C /* RRFPSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRFPSBar.m; sourceTree = "<group>"; };
 		65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoImageTextureProvider.swift; sourceTree = "<group>"; };
 		6584EF65206E3B2600612B29 /* ImageFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilters.swift; sourceTree = "<group>"; };
 		6587DA4E2063F634002FA027 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
@@ -152,6 +157,9 @@
 		65FCFF3A205A54BA00AE4C64 /* SceneSwap */ = {
 			isa = PBXGroup;
 			children = (
+				6535E856207263E600EDA97C /* RRFPSBar.h */,
+				6535E857207263E600EDA97C /* RRFPSBar.m */,
+				6535E85320723D7800EDA97C /* asfalt-light.png */,
 				6584EF65206E3B2600612B29 /* ImageFilters.swift */,
 				C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */,
 				C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */,
@@ -341,6 +349,7 @@
 				C533B2D32070B20900E5B1CD /* SelfieSwapOrb.obj in Resources */,
 				C533B2D42070B20900E5B1CD /* OrbTestImage.jpeg in Resources */,
 				65FCFF46205A54BA00AE4C64 /* LaunchScreen.storyboard in Resources */,
+				6535E85420723D7900EDA97C /* asfalt-light.png in Resources */,
 				65FCFF71205A550400AE4C64 /* GameTex.png in Resources */,
 				65FCFF43205A54BA00AE4C64 /* Assets.xcassets in Resources */,
 				C533B2D62070B29A00E5B1CD /* Test1.jpg in Resources */,
@@ -376,10 +385,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SceneSwap/Pods-SceneSwap-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/WatchdogInspector/WatchdogInspector.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WatchdogInspector.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,6 +540,7 @@
 				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
 				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,
 				65FCFF3C205A54BA00AE4C64 /* AppDelegate.swift in Sources */,
+				6535E858207263E700EDA97C /* RRFPSBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
