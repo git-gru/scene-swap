@@ -45,7 +45,6 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap(gestureRecognize:)))
         view.addGestureRecognizer(tapGesture)
-        
         self.photoLibraryButton.setTitle("Change \n image", for: .normal)
         
     }
@@ -239,9 +238,7 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
 
     // MARK: - ARSessionDelegate
     
-    /*func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        renderer.update()
-    }*/
+    
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user

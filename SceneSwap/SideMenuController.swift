@@ -34,7 +34,8 @@ class SideMenuController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 5
+        
     }
 
     /*
@@ -77,6 +78,9 @@ class SideMenuController: UITableViewController {
             self.sideMenuController?.hideLeftView()
         }
         if indexPath.row == 3{
+            
+        }
+        if indexPath.row == 4{
             
             //            con.startInitials()
             con.backValueNil()
