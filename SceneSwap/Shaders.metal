@@ -54,11 +54,11 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
                                    min_filter::linear);
     
     const float4x4 ycbcrToRGBTransform = float4x4(
-        float4(+1.0000f, +1.0000f, +1.0000f, +0.0000f),
-        float4(+0.0000f, -0.3441f, +1.7720f, +0.0000f),
-        float4(+1.4020f, -0.7141f, +0.0000f, +0.0000f),
-        float4(-0.7010f, +0.5291f, -0.8860f, +1.0000f)
-    );
+                                                  float4(+1.0000f, +1.0000f, +1.0000f, +0.0000f),
+                                                  float4(+0.0000f, -0.3441f, +1.7720f, +0.0000f),
+                                                  float4(+1.4020f, -0.7141f, +0.0000f, +0.0000f),
+                                                  float4(-0.7010f, +0.5291f, -0.8860f, +1.0000f)
+                                                  );
     
     // Sample Y and CbCr textures to get the YCbCr color at the given texture coordinate
     float4 ycbcr = float4(capturedImageTextureY.sample(colorSampler, in.texCoord).r, capturedImageTextureCbCr.sample(colorSampler, in.texCoord).rg, 1.0);
@@ -70,6 +70,32 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
     } else {
         discard_fragment();
     }
+}
+
+// Captured depth fragment function
+fragment float4 capturedDepthFragmentShader(ImageColorInOut in [[stage_in]],
+                                            texture2d<float, access::sample> capturedImageTextureY [[ texture(kTextureIndexY) ]],
+                                            texture2d<float, access::sample> capturedImageTextureCbCr [[ texture(kTextureIndexCbCr) ]],
+                                            texture2d<float, access::sample> capturedImageTextureDepth [[ texture(kTextureIndexDepth) ]],
+                                            constant SharedUniforms &uniforms [[ buffer(kBufferIndexSharedUniforms) ]]) {
+    
+    constexpr sampler colorSampler(mip_filter::linear,
+                                   mag_filter::linear,
+                                   min_filter::linear);
+    
+    const float4x4 ycbcrToRGBTransform = float4x4(
+                                                  float4(+1.0000f, +1.0000f, +1.0000f, +0.0000f),
+                                                  float4(+0.0000f, -0.3441f, +1.7720f, +0.0000f),
+                                                  float4(+1.4020f, -0.7141f, +0.0000f, +0.0000f),
+                                                  float4(-0.7010f, +0.5291f, -0.8860f, +1.0000f)
+                                                  );
+    
+    // Sample Y and CbCr textures to get the YCbCr color at the given texture coordinate
+    float4 ycbcr = float4(capturedImageTextureY.sample(colorSampler, in.texCoord).r, capturedImageTextureCbCr.sample(colorSampler, in.texCoord).rg, 1.0);
+    float depth = capturedImageTextureDepth.sample(colorSampler, in.texCoord).r;
+    
+    // Return depth map
+    return 1.0 - depth;
 }
 
 
