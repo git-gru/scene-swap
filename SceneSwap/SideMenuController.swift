@@ -78,7 +78,9 @@ class SideMenuController: UITableViewController {
             self.sideMenuController?.hideLeftView()
         }
         if indexPath.row == 3{
-            
+            con.obj = "SelfieSwapOrb"
+            con.changeMetal()
+            self.sideMenuController?.hideLeftView()
         }
         if indexPath.row == 4{
             

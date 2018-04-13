@@ -40,7 +40,7 @@ let kImagePlaneVertexData: [Float] = [
 
 class Renderer {
     
-//    var obj : String!
+    var obj = ""
 //    var image : String!
     let session: ARSession
     let device: MTLDevice
@@ -165,6 +165,7 @@ class Renderer {
     init(session: ARSession, metalDevice device: MTLDevice, renderDestination: RenderDestinationProvider,image:UIImage, object:String) {
         self.session = session
         self.device = device
+        self.obj = object
         self.renderDestination = renderDestination
         loadMetal()
         loadAssets(image: image, object: object)
@@ -294,6 +295,7 @@ class Renderer {
         
         let capturedImageVertexFunction = defaultLibrary.makeFunction(name: "capturedImageVertexTransform")!
         let capturedImageFragmentFunction = defaultLibrary.makeFunction(name: "capturedImageFragmentShader")!
+        let capturedDepthFragmentFunction = defaultLibrary.makeFunction(name: "capturedDepthFragmentShader")!
         
         // Create a vertex descriptor for our image plane vertex buffer
         let imagePlaneVertexDescriptor = MTLVertexDescriptor()
@@ -318,7 +320,13 @@ class Renderer {
         capturedImagePipelineStateDescriptor.label = "MyCapturedImagePipeline"
         capturedImagePipelineStateDescriptor.sampleCount = renderDestination.sampleCount
         capturedImagePipelineStateDescriptor.vertexFunction = capturedImageVertexFunction
-        capturedImagePipelineStateDescriptor.fragmentFunction = capturedImageFragmentFunction
+        if obj == ""{
+            capturedImagePipelineStateDescriptor.fragmentFunction = capturedDepthFragmentFunction
+            
+        }else{
+            capturedImagePipelineStateDescriptor.fragmentFunction = capturedImageFragmentFunction
+        }
+        
         capturedImagePipelineStateDescriptor.vertexDescriptor = imagePlaneVertexDescriptor
         capturedImagePipelineStateDescriptor.colorAttachments[0].pixelFormat = renderDestination.colorPixelFormat
         capturedImagePipelineStateDescriptor.depthAttachmentPixelFormat = renderDestination.depthStencilPixelFormat
@@ -399,6 +407,9 @@ class Renderer {
         // Create the command queue
         commandQueue = device.makeCommandQueue()
     }
+    
+    
+    
     
     func loadAssets(image:UIImage?, object:String) {
         // Create and load our assets into Metal objects including meshes and textures

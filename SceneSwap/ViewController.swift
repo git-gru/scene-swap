@@ -81,17 +81,76 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
 //            renderer = nil
 //        }
 //        startInitials()
+        app.fpsStop()
         if self.obj == "SelfieSwapOrb"{
             self.photoLibraryButton.isHidden = false
         }else{
             self.photoLibraryButton.isHidden = true
         }
-        renderer.loadAssets(image: self.image, object: self.obj)
+//        renderer.obj = ""
+//        renderer.loadMetal()
+//
+//        renderer.loadAssets(image: self.image, object: self.obj)
+//        app.fpsStart()
+        
+        
+//        app.fpsStop()
+        if let view = self.view as? MTKView {
+            view.device = MTLCreateSystemDefaultDevice()
+            view.backgroundColor = UIColor.clear
+            view.delegate = self
+            
+            guard view.device != nil else {
+                print("Metal is not supported on this device")
+                return
+            }
+            
+            // Configure the renderer to draw to the view
+            //            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
+            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
+            //            view.preferredFramesPerSecond = 30
+            renderer.obj = "onlyDepth"
+            renderer.drawRectResized(size: view.bounds.size)
+        }
+        app.fpsStart()
     }
+    
+    func changeMetal(){
+//        if self.obj == "SelfieSwapOrb"{
+//            self.photoLibraryButton.isHidden = false
+//        }else{
+//            self.photoLibraryButton.isHidden = true
+//        }
+//        renderer.obj = "onlyDepth"
+//        renderer.loadMetal()
+//        renderer.loadAssets(image: self.image, object: self.obj)
+        
+        app.fpsStop()
+        if let view = self.view as? MTKView {
+            view.device = MTLCreateSystemDefaultDevice()
+            view.backgroundColor = UIColor.clear
+            view.delegate = self
+            
+            guard view.device != nil else {
+                print("Metal is not supported on this device")
+                return
+            }
+            
+            // Configure the renderer to draw to the view
+            //            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
+            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: "")
+            //            view.preferredFramesPerSecond = 30
+             renderer.obj = "onlyDepth"
+            renderer.drawRectResized(size: view.bounds.size)
+        }
+        app.fpsStart()
+        
+    }
+    
     
     func backValueNil(){
        
-        
+        app.fpsStop()
         if let view = self.view as? MTKView {
             view.device = MTLCreateSystemDefaultDevice()
             view.backgroundColor = UIColor.clear
@@ -105,10 +164,9 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
             // Configure the renderer to draw to the view
             //            renderer = Renderer(session: session, metalDevice: view.device!, renderDestination: view, image: self.image, object: self.obj)
          renderer.loadAssets(image: nil, object: self.obj)
-            
-            renderer.drawRectResized(size: view.bounds.size)
+         renderer.drawRectResized(size: view.bounds.size)
         }
-        
+        app.fpsStart()
     }
     
     @IBAction func openLefts(_ sender: Any) {
