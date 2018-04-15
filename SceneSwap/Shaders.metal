@@ -65,7 +65,7 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
     float depth = capturedImageTextureDepth.sample(colorSampler, in.texCoord).r;
     
     // Return converted RGB color
-    if (depth < uniforms.cutoffDistance) {
+    if (depth < uniforms.cutoffDistance && !isnan(depth)) {
         return ycbcrToRGBTransform * ycbcr;
     } else {
         discard_fragment();
