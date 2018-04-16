@@ -39,9 +39,6 @@
                                             <constraint firstAttribute="height" constant="25" id="t3N-J5-5HQ"/>
                                         </constraints>
                                         <state key="normal" image="flash-off"/>
-                                        <connections>
-                                            <action selector="openLefts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KxS-ss-0a2"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-ZY-ngY">
                                         <rect key="frame" x="175" y="13" width="25" height="25"/>
@@ -50,9 +47,6 @@
                                             <constraint firstAttribute="height" constant="25" id="OoI-BF-1pq"/>
                                         </constraints>
                                         <state key="normal" image="flashlight"/>
-                                        <connections>
-                                            <action selector="openLefts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UmX-ex-h7X"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Q6-xM-hKR">
                                         <rect key="frame" x="330" y="13" width="25" height="25"/>
@@ -61,9 +55,6 @@
                                             <constraint firstAttribute="width" constant="25" id="7VA-Qy-PP2"/>
                                         </constraints>
                                         <state key="normal" image="filters"/>
-                                        <connections>
-                                            <action selector="openLefts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFO-jX-7bH"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzM-lx-xP1">
                                         <rect key="frame" x="252.5" y="13" width="25" height="25"/>
@@ -72,9 +63,6 @@
                                             <constraint firstAttribute="height" constant="25" id="gC2-Z4-YaM"/>
                                         </constraints>
                                         <state key="normal" image="stopwatch"/>
-                                        <connections>
-                                            <action selector="openLefts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgu-Kl-0cC"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.32619938380000002" colorSpace="custom" customColorSpace="sRGB"/>
@@ -279,12 +267,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="8c9-Yx-gQK">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="8c9-Yx-gQK">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Select Scene" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-cj-yKG">
-                                    <rect key="frame" x="107" y="79" width="161.5" height="21"/>
+                                    <rect key="frame" x="107" y="29.5" width="161.5" height="21"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
