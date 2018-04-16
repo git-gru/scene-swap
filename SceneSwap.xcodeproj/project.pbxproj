@@ -132,6 +132,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655E659B2084CB0300B094B0 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				6584EF65206E3B2600612B29 /* ImageFilters.swift */,
+				6535E856207263E600EDA97C /* RRFPSBar.h */,
+				6535E857207263E600EDA97C /* RRFPSBar.m */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		655E659C2084CB1A00B094B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6535E85320723D7800EDA97C /* asfalt-light.png */,
+				C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */,
+				C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */,
+				C533B2D52070B29A00E5B1CD /* Test1.jpg */,
+				6587DA522063FB15002FA027 /* Ballroom.jpg */,
+				658A4029205F836900171BAE /* Cylinderv01.obj */,
+				65FCFF69205A550300AE4C64 /* Game.obj */,
+				65FCFF6B205A550300AE4C64 /* GameTex.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		655E659D2084CB4600B094B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
+				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
+				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
+				65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		65FCFF2F205A54BA00AE4C64 = {
 			isa = PBXGroup;
 			children = (
@@ -157,29 +193,17 @@
 		65FCFF3A205A54BA00AE4C64 /* SceneSwap */ = {
 			isa = PBXGroup;
 			children = (
-				6535E856207263E600EDA97C /* RRFPSBar.h */,
-				6535E857207263E600EDA97C /* RRFPSBar.m */,
-				6535E85320723D7800EDA97C /* asfalt-light.png */,
-				6584EF65206E3B2600612B29 /* ImageFilters.swift */,
-				C533B2D22070B20900E5B1CD /* OrbTestImage.jpeg */,
-				C533B2D12070B20800E5B1CD /* SelfieSwapOrb.obj */,
-				C533B2D52070B29A00E5B1CD /* Test1.jpg */,
-				6587DA522063FB15002FA027 /* Ballroom.jpg */,
-				658A4029205F836900171BAE /* Cylinderv01.obj */,
-				65FCFF69205A550300AE4C64 /* Game.obj */,
-				65FCFF6B205A550300AE4C64 /* GameTex.png */,
-				65FCFF6D205A550300AE4C64 /* Renderer.swift */,
-				65FCFF6E205A550400AE4C64 /* Shaders.metal */,
-				65FCFF6A205A550300AE4C64 /* ShaderTypes.h */,
-				65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */,
+				655E659B2084CB0300B094B0 /* Third Party */,
+				655E659C2084CB1A00B094B0 /* Resources */,
+				655E659D2084CB4600B094B0 /* Supporting Files */,
+				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
 				6520B0ED2068BF3800CBCB12 /* ViewController.swift */,
 				6587DA4E2063F634002FA027 /* SideMenuController.swift */,
-				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
-				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
 				65FCFF42205A54BA00AE4C64 /* Assets.xcassets */,
+				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
 				65FCFF44205A54BA00AE4C64 /* LaunchScreen.storyboard */,
-				65FCFF47205A54BA00AE4C64 /* Info.plist */,
 				65FCFF7D205A558A00AE4C64 /* SceneSwap-Bridging-Header.h */,
+				65FCFF47205A54BA00AE4C64 /* Info.plist */,
 			);
 			path = SceneSwap;
 			sourceTree = "<group>";
