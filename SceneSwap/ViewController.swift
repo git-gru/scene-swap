@@ -72,6 +72,10 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
         }
     }
     
+    @IBAction func zDepthSlider(_ sender: Any) {
+    }
+    @IBAction func softnessSlider(_ sender: Any) {
+    }
     func change(){
 //        if let view = self.view as? MTKView {
 //            view.device = MTLCreateSystemDefaultDevice()
