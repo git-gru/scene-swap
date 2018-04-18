@@ -13,6 +13,8 @@
 		6535E858207263E700EDA97C /* RRFPSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6535E857207263E600EDA97C /* RRFPSBar.m */; };
 		65709936206F66C6001AA963 /* VideoImageTextureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */; };
 		6584EF66206E3B2700612B29 /* ImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6584EF65206E3B2600612B29 /* ImageFilters.swift */; };
+		6587D76820874CD4005C6A60 /* SideRightMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587D76720874CD4005C6A60 /* SideRightMenuController.swift */; };
+		6587D76A208753E8005C6A60 /* TopMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587D769208753E8005C6A60 /* TopMenuController.swift */; };
 		6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6587DA4E2063F634002FA027 /* SideMenuController.swift */; };
 		6587DA532063FB15002FA027 /* Ballroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6587DA522063FB15002FA027 /* Ballroom.jpg */; };
 		658A402B205F836900171BAE /* Cylinderv01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 658A4029205F836900171BAE /* Cylinderv01.obj */; };
@@ -68,6 +70,8 @@
 		6535E857207263E600EDA97C /* RRFPSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RRFPSBar.m; sourceTree = "<group>"; };
 		65709935206F66C6001AA963 /* VideoImageTextureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoImageTextureProvider.swift; sourceTree = "<group>"; };
 		6584EF65206E3B2600612B29 /* ImageFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilters.swift; sourceTree = "<group>"; };
+		6587D76720874CD4005C6A60 /* SideRightMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideRightMenuController.swift; sourceTree = "<group>"; };
+		6587D769208753E8005C6A60 /* TopMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuController.swift; sourceTree = "<group>"; };
 		6587DA4E2063F634002FA027 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		6587DA522063FB15002FA027 /* Ballroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ballroom.jpg; sourceTree = "<group>"; };
 		658A4029205F836900171BAE /* Cylinderv01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylinderv01.obj; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				65FCFF3B205A54BA00AE4C64 /* AppDelegate.swift */,
 				6520B0ED2068BF3800CBCB12 /* ViewController.swift */,
 				6587DA4E2063F634002FA027 /* SideMenuController.swift */,
+				6587D76720874CD4005C6A60 /* SideRightMenuController.swift */,
+				6587D769208753E8005C6A60 /* TopMenuController.swift */,
 				65FCFF42205A54BA00AE4C64 /* Assets.xcassets */,
 				65FCFF3F205A54BA00AE4C64 /* Main.storyboard */,
 				65FCFF44205A54BA00AE4C64 /* LaunchScreen.storyboard */,
@@ -559,7 +565,9 @@
 			files = (
 				6520B0EE2068BF3800CBCB12 /* ViewController.swift in Sources */,
 				65709936206F66C6001AA963 /* VideoImageTextureProvider.swift in Sources */,
+				6587D76820874CD4005C6A60 /* SideRightMenuController.swift in Sources */,
 				6584EF66206E3B2700612B29 /* ImageFilters.swift in Sources */,
+				6587D76A208753E8005C6A60 /* TopMenuController.swift in Sources */,
 				6587DA4F2063F634002FA027 /* SideMenuController.swift in Sources */,
 				65FCFF74205A550400AE4C64 /* Shaders.metal in Sources */,
 				65FCFF73205A550400AE4C64 /* Renderer.swift in Sources */,

@@ -1,14 +1,14 @@
 //
-//  SideMenuController.swift
+//  SideRightMenuController.swift
 //  SceneSwap
 //
-//  Created by Rizwan on 3/22/18.
+//  Created by Rizwan on 4/18/18.
 //  Copyright © 2018 Rizwan. All rights reserved.
 //
 
 import UIKit
 
-class SideMenuController: UITableViewController {
+class SideRightMenuController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,15 +27,14 @@ class SideMenuController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
-        
+        return 0
     }
 
     /*
@@ -47,49 +46,7 @@ class SideMenuController: UITableViewController {
         return cell
     }
     */
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let root = self.sideMenuController?.rootViewController as! UINavigationController
-//        let con = root.viewControllers[0] as! ViewController
-        let con = self.sideMenuController?.rootViewController as! ViewController
-        if indexPath.row == 0{
-            
-//            con.image = "Ballroom"
-            con.image = #imageLiteral(resourceName: "Ballroom.jpg")
-            con.obj = "Cylinderv01"
-            //            con.startInitials()
-            con.change()
-            self.sideMenuController?.hideLeftView()
-        }
-        if indexPath.row == 1{
-//            con.image = "GameTex"
-            con.image = #imageLiteral(resourceName: "GameTex.png")
-            con.obj = "Game"
-//            con.startInitials()
-            con.change()
-            self.sideMenuController?.hideLeftView()
-        }
-        if indexPath.row == 2{
-            
-//            con.image = "OrbTestImage"
-            con.image = #imageLiteral(resourceName: "OrbTestImage.jpeg")
-            con.obj = "SelfieSwapOrb"
-            //            con.startInitials()
-            con.change()
-            self.sideMenuController?.hideLeftView()
-        }
-        if indexPath.row == 3{
-            con.obj = "SelfieSwapOrb"
-            con.changeMetal()
-            self.sideMenuController?.hideLeftView()
-        }
-        if indexPath.row == 4{
-            
-            //            con.startInitials()
-            con.backValueNil()
-            self.sideMenuController?.hideLeftView()
-        }
-        
-    }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

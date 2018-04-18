@@ -180,6 +180,16 @@ class ViewController: UIViewController, MTKViewDelegate, ARSessionDelegate {
     @objc func openLeft(){
      self.sideMenuController?.showLeftView()
     }
+    @IBAction func openRight(_ sender: UIButton) {
+        self.sideMenuController?.showRightView()
+    }
+    @IBAction func forTopMenu(_ sender: UIButton) {
+        app.fpsStop()
+        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150)
+        topMenu.view.frame = frame
+        topMenu.con = self
+        UIApplication.shared.keyWindow?.addSubview(topMenu.view)
+    }
     
     @IBAction func showPhotoLibrary(_ sender: UIButton) {
         

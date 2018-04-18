@@ -12,6 +12,7 @@ import WatchdogInspector
 
 let storyBoardMain = UIStoryboard(name: "Main", bundle: nil)
 let app = UIApplication.shared.delegate as! AppDelegate
+let topMenu = storyBoardMain.instantiateViewController(withIdentifier: "TopMenuController") as! TopMenuController
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        RRFPSBar.sharedInstance().isHidden = false
-        fpsStart()
+//        fpsStart()
         setMenu()
         return true
     }
@@ -39,15 +40,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootViewController = storyBoardMain.instantiateViewController(withIdentifier: "ViewController")
         let leftViewController = storyBoardMain.instantiateViewController(withIdentifier: "sidemenucontroller")
+        let rightViewController = storyBoardMain.instantiateViewController(withIdentifier: "SideRightMenuController")
         
 //        let navigationController = UINavigationController(rootViewController: rootViewController)
         
         let sideMenuController = LGSideMenuController(rootViewController: rootViewController,
                                                       leftViewController: leftViewController,
-                                                      rightViewController: nil)
+                                                      rightViewController: rightViewController)
 
         sideMenuController.leftViewWidth = 250.0;
+        sideMenuController.rightViewWidth = 250.0;
         sideMenuController.leftViewPresentationStyle = .slideBelow ;
+        sideMenuController.rightViewPresentationStyle = .slideBelow ;
         self.window?.rootViewController = sideMenuController
         self.window?.makeKeyAndVisible()
         
